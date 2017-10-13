@@ -1,0 +1,176 @@
+.header
+{
+    text-align:center;
+    padding-bottom:.2cm;
+    padding-top:.2cm;
+    background-color:WhiteSmoke;
+    border:1px solid;
+    border-color:#999999;
+}
+
+.bigLink
+{
+    font-size:20px;
+    text-decoration:none;
+    text-align:center;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+}
+
+.smallLink
+{
+    font-size:15px;
+    text-decoration:none;
+    text-align:center;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+}
+
+.spacer
+{
+    display:inline-block;
+    width:15px;
+}
+
+.infoSection
+{
+    padding-top:.75cm;
+    width:700px;
+    height:210px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.info
+{
+    float:left;
+    width:180px;
+    height:210px;
+}
+
+.photo
+{
+    float:right;
+    width:520px;
+    height:210px;
+}
+
+.bigText
+{
+    font-size:30px;
+    text-align:left;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+}
+
+.infoText
+{
+    font-size:15px;
+    text-align:left;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+}
+
+.body
+{
+    width:500px;
+    font-size:15px;
+    text-align:left;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.bodyLink
+{
+    text-decoration:none;
+    text-align:center;
+    color:#6600dd;
+    font-family:helvetica;
+    font-weight:lighter;
+}
+
+
+.papersList
+{
+    padding-top:.5cm;
+    width:600px;
+    font-size:15px;
+    text-align:left;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+
+
+.menu
+{
+    width:700px;
+    text-align:center;
+    padding-bottom:.2cm;
+    padding-top:.2cm;
+    background-color:WhiteSmoke;
+    border:1px solid;
+    border-color:#999999;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+
+
+.illustration
+{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+
+
+.researchSection
+{
+    padding-top:.75cm;
+    width:700px;
+    height:330px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.research
+{
+    float:left;
+    width:170px;
+    height:330px;
+}
+
+.researchInfo
+{
+    float:right;
+    width:530px;
+    height:330px;
+}
+
+.hobbiesTitle
+{
+    padding-top:.5cm;
+    width:700px;
+    font-size:15px;
+    text-align:left;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+    margin-right:auto;
+    margin-left:auto;
+}

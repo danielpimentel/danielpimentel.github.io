@@ -1,0 +1,176 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<script src="swap.js"></script>
+<script type="text/javascript"
+	src="http://latex.codecogs.com/latexit.js"></script>
+<script type="text/javascript">
+LatexIT.add('p',true);
+</script>
+<link rel=stylesheet href="style.css" type="text/css">
+<title>Daniel Pimentel</title>
+</head>
+
+<body align="center">
+	<div>
+	  <div class="header">
+			<a href="index.html", class="bigLink"> Daniel Pimentel-Alarcón </a> <span class="spacer"> </span>
+	    <a href="publications.html", class="smallLink"> publications &amp code </a> <span class="spacer"> </span>
+	    <a href="talks.html", class="smallLink"> talks </a> <span class="spacer"> </span>
+	    <a href="teaching.html", class="smallLink"> teaching </a> <span class="spacer"> </span>
+	    <a href="research.html", class="smallLink"> <b>research</b> </a> <span class="spacer"> </span>
+			<a href="hobbies.html", class="smallLink"> hobbies </a>
+	  </div>
+
+
+		<div class="researchSection">
+
+	    <div class="research">
+	      <div class="infoText"> <br> </div>
+	      <div class="bigText"> research </div>
+	    </div>
+
+	    <div class="researchInfo">
+	     <p class="infoText"> <b>Subspaces lie at the heart of data analysis</b>.
+			 	 As soon as we get our hands on some data, finding a subspace that explains it is one of the first
+				 things we try, for example, using Principal Component Analysis (<b>PCA</b>) or linear regression.
+		 	 </p>
+
+			 <p class="infoText"> <b>Many applications have missing data and gross errors.</b>
+			 	 For example, in computer vision, occlusions produce missing data; in surveys and recommender systems,
+				 subjects do not know or do not want to provide all information.
+		 	 </p>
+
+			 <p class="infoText"> <b>The main focus of my research is learning subspaces from highly incomplete
+				 and corrupted data</b>.  This has numerous applications in networks, computer vision, drug-discovery,
+				 rigidity theory, recommender systems, surveys, and pretty much anywhere there are subspaces
+				 and incomplete or corrupted data.</p>
+
+			 <p class="infoText">
+				 My research interests include signal processing, machine learning, optimization, statistics, and algebraic
+				 geometry.
+			 </p>
+	    </div>
+
+	  </div>
+
+
+	  <div class="menu">
+	    <a href="subspaces.html", class="smallLink"> <b>subspaces</b> </a> <span class="spacer"> </span>
+	    <a href="drug.html", class="smallLink"> drug discovery </a> <span class="spacer"> </span>
+	    <a href="networks.html", class="smallLink"> networks </a> <span class="spacer"> </span>
+	    <a href="rigidity.html", class="smallLink"> rigidity </a> <span class="spacer"> </span>
+			<a href="deep.html", class="smallLink"> deep learning </a> <span class="spacer"> </span>
+	    <a href="vision.html", class="smallLink"> vision </a>
+	  </div>
+
+
+	  <div class="papersList">
+	    <br>
+	    <div class="bigText"> Subspaces &amp Missing Data </div>
+	  </div>
+
+
+	  <div class="body"><br>
+
+	    <p>We often want to find a subspace that explains a dataset.
+				But often data is missing, so we cannot use our usual tricks, like PCA.
+				To build some intuition of the difficulties of this problem,
+				suppose I give you one datapoint (no missing data),
+				and ask you to find the 1-dimensional subspace <i>S</i> that explains it.
+				Easy: it is the subspace going from the origin to the given point.
+			</p><br><br>
+
+		  <img class="illustration", style="width:40%",
+		       src="Images/subspaceFullData.png"/><br>
+
+		  <p>Now suppose I give you one datapoint <i>without</i> the <i>z</i> coordinate.
+				Then we don't even know where the point <i>is</i>, and we can no longer find the
+				subspace that explains it.  There are infinitely many options!
+			</p><br><br>
+
+			<img class="illustration", style="width:40%",
+		       src="Images/subspaceMissingData.png"/><br>
+
+			<p>If I give you an other incomplete point <i>with</i> the <i>(y,z)</i> coordinates,
+				then you would be able to find <i>S</i>.  This would <i>not</i> be the case if I
+				gave you an other incomplete point <i>without</i> the <i>z</i> coordinate.
+			</p>
+
+			<p><b>The question is</b>: if I give you a collection of <i>incomplete</i> points,
+				where do I need to observe them such that they uniquely define an <i>r</i>-dimensional
+				subspace? Whence, how do I identify such a subspace?
+				This has been the main focus of my work.
+			</p>
+
+			<p>Collection of <i>incomplete</i> points are usually given in the form of a
+				partially observed matrix.  A matrix is rank-<i>r</i> iff all its columns lie in an
+				<i>r</i>-dimensional subspace. Hence this problem is usually called Low-Rank Matrix
+				Completion (<b>LRMC</b>).	If we knew <i>S</i> we could infer the missing entries.
+				Conversely, if we knew the missing entries, we could infer <i>S</i>.
+				So this is like a chicken and egg problem.
+			</p>
+
+
+	  </div>
+
+		<div class="papersList">
+	    <br>
+	    <div class="bigText"> Unions of Subspaces </div>
+	  </div>
+
+
+	  <div class="body"><br>
+
+	    <p>Sometimes we have an incomplete data matrix whose columns lie in a
+				union of subspaces. The goal is to infer the underlying subspaces and
+				cluster the columns accordingly.
+				This is often known as incomplete-data Subspace Clustering (<b>iSC</b>).
+			</p><br>
+
+		  <img class="illustration", style="width:75%",
+		       src="Images/UoSfig.png"/><br>
+
+		  <p>iSC is the generalization of LRMC to the case where columns lie in several
+				subspaces, rather than just one.  Similarly, iSC is the generalization of
+				Subspace Clustering to the case where data is incomplete.
+				The main question is: <b>when can we hope to solve this problem, and how?</b>
+			</p>
+
+	  </div>
+
+		<div class="papersList">
+	    <br>
+	    <div class="bigText"> Gross Errors </div>
+	  </div>
+
+
+	  <div class="body"><br>
+
+	    <p>One is often given a data matrix whose columns lie in a low-dimensional
+				subspace (as in the left), but every column may have a few grossly
+				corrupted entries (as in the right).  This makes every point an outlier.
+			</p><br><br>
+
+			<img class="illustration", style="width:75%",
+		       src="Images/rpca.png"/><br>
+
+			<p>The goal is to identify the underlying subspace.  This problem is often
+				known as Robust PCA.
+				If columns lie in a union of subspaces, rather than just one, the
+				problem is called Robust Subspace Clustering.
+			</p>
+
+
+	  </div>
+
+		<div class="smallLink">
+			<br><br><hr>
+			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
+			<br><br><br><br><br><br>
+		</div>
+
+	</div>
+</body>
+</html>
