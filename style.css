@@ -157,6 +157,15 @@
     margin-left:auto;
 }
 
+.teachingSection
+{
+    padding-top:.75cm;
+    width:700px;
+    height:500px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
 .research
 {
     float:left;
