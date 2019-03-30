@@ -62,24 +62,7 @@ Here is how you include a Figure:
 \label{figName}
 \end{figure}
 
-Here is how you make a reference to Figure \ref{figName}. Here is how you include a Table:
-
-\begin{table}[h]
-\begin{center}
-\begin{tabular}{| c || c | c |}
-\hline
-Image & Antibiotic 1 & Antibiotic 2 \\ \hline \hline
-PIL-1\_3dayLBCR-1 & 19 & 4 \\ \hline
-PIL-1\_3dayLBCR-2 & 19 & 4 \\ \hline
-\vdots & \vdots & \vdots \\ \hline
-PIL-373\_3dayLBCR-4 & 24 & 25 \\ \hline
-\end{tabular}
-\caption{Write Table's caption here.}
-\label{tabName}
-\end{center}
-\end{table}
-
-Here is how you reference Table \ref{tabName}.
+Here is how you make a reference to Figure \ref{figName}.
 
 %=====METHODS=====
 \section{Methods}
@@ -94,7 +77,41 @@ Here is how you reference equation \eqref{eqName}.
 
 %=====EXPERIMENTS=====
 \section{Experiments}
-Describe your experiments and present your results.
+Here you need to describe your experiments and present your results. Part of the deliverables will be an Excel file containing your predictions for {\em all} images in the dataset, which should look like Table \ref{tabDeliverable}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{| c || c | c |}
+\hline
+Image & Prediction 1 & Prediction 2 \\ \hline \hline
+PIL-1\_3dayLBCR-1 & 19 & 4 \\ \hline
+PIL-1\_3dayLBCR-2 & 19 & 4 \\ \hline
+\vdots & \vdots & \vdots \\ \hline
+PIL-373\_3dayLBCR-4 & 24 & 25 \\ \hline
+\end{tabular}
+\caption{Structure of deliverable Excel file.}
+\label{tabDeliverable}
+\end{center}
+\end{table}
+
+In addition, you should summarize your results in a table that looks like Table \ref{tabSummary}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{| c || c | c |}
+\hline
+Method & Accuracy 1 (\%) & Accuracy 2 (\%) \\ \hline \hline
+Linear Regression & \textbf{82} & 79 \\ \hline
+Neural Network & 78 & \textbf{85} \\ \hline
+Random Forests & 80 & 81 \\ \hline
+\end{tabular}
+\caption{Results summary.}
+\label{tabSummary}
+\end{center}
+\end{table}
+
+
+%=====CONCLUSIONS=====
+\section{Conclusions}
+Here you should discuss your conclusions and insights.
 
 %=====REFERENCES=====
 \begin{thebibliography}{1}
