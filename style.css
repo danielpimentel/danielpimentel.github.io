@@ -75,6 +75,15 @@
     font-weight:lighter;
 }
 
+.bmiText
+{
+    font-size:22px;
+    text-align:left;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+}
+
 .infoText
 {
     font-size:14px;
