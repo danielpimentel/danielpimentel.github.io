@@ -1,0 +1,128 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<script src="swap.js"></script>
+<script type="text/javascript"
+	src="http://latex.codecogs.com/latexit.js"></script>
+<script type="text/javascript">
+LatexIT.add('p',true);
+</script>
+<link rel=stylesheet href="style.css" type="text/css">
+<title>Daniel Pimentel</title>
+</head>
+
+<body align="center">
+	<div>
+	  <div class="header">
+			<a href="index.html", class="bigLink"> Daniel Pimentel-Alarcón </a> <span class="spacer"> </span>
+	    <a href="publications.html", class="smallLink"> papers &amp code </a> <span class="spacer"> </span>
+	    <a href="talks.html", class="smallLink"> talks </a> <span class="spacer"> </span>
+	    <a href="teaching.html", class="smallLink"> teaching </a> <span class="spacer"> </span>
+			<a href="students.html", class="smallLink"> students </a> <span class="spacer"> </span>
+	    <a href="research.html", class="smallLink"> <b>research</b> </a> <span class="spacer"> </span>
+			<a href="hobbies.html", class="smallLink"> hobbies </a>
+	  </div>
+
+
+	  <div class="teachingSection">
+
+	    <div class="research">
+				<div class="bigText"> <a href="research.html", class="hugeLink"> Appications </a> </div>
+				<div class="bigText"> <a href="bacteria.html", class="smallLink"> Bacteria Classification </a> </div>
+				<div class="bigText"> <a href="biodiversity.html", class="smallLink"> Biodiversity Conservation </a> </div>
+				<div class="bigText"> <a href="dimensionality.html", class="smallLink"> Dimensionality Reduction </a> </div>
+				<div class="bigText"> <a href="drug.html", class="smallLink"> Drug Discovery </a> </div>
+				<div class="bigText"> <a href="flares.html", class="smallLink"> Flares Prediction </a> </div>
+				<div class="bigText"> <a href="metagenomics.html", class="smallLink"> Metagenomics </a> </div>
+				<div class="bigText"> <a href="networks.html", class="smallLink"> Networks Inference </a> </div>
+				<div class="bigText"> <a href="phylogenetics.html", class="smallLink"> Phylogenetics </a> </div>
+				<div class="infoText"> <b>Recommender Systems</b> </div>
+				<div class="bigText"> <a href="rigidity.html", class="smallLink"> Rigidity </a> </div>
+				<div class="bigText"> <a href="ssa.html", class="smallLink"> Space Sit. Awareness </a> </div>
+				<div class="bigText"> <a href="wood.html", class="smallLink"> Wood Classification </a> </div>
+
+				<br><br><br><br>
+
+				<div class="bigText"> <a href="theory.html", class="hugeLink"> Theory </a> </div>
+
+	    </div>
+
+	    <div class="researchInfo">
+				<div class="papersList">
+
+					<div class="body">
+
+						<div class="bigText">Recommender Systems</div><hr>
+
+						<p>Companies like Amazon and Netflix are very interested in making good recommendations &#8212;
+							if they recommend items you like, they are more likely to keep your business. To this end they use
+							information about their users (age, gender, etc.), and user ratings of their items. Their goal
+							is to exploit this information to predict what you would like. The challenge is that most users
+							have only rated a handful of items, producing a very <b>incomplete dataset</b>.
+						</p>
+
+						<img class="illustration", style="width:80%",
+					      src="Images/recommender1.png"/>
+
+						<p>Fortunately, data often follows patterns that can be exploited for prediction.
+							Here is a simple example: we can calculate the <i>romance</i>, <i>comedy</i>, <i>action</i>, and
+							<i>horror</i> components of <i>all</i> movies, and put them in column vectors. Similarly,
+							we can have coefficients <i>a</i>, <i>b</i>, <i>c</i>, and <i>d</i> of each user
+							indicating how much they like each component. Finally, we can model a user's rating of a specific movie
+							as the linear combination of the movie components and the user coefficients. Repeating the same
+							for every movie, we can model a user's ratings vector as the linear combination of the movies
+							component vectors with the user's coefficients.</p>
+
+						<img class="illustration", style="width:80%",
+						     src="Images/recommender2.png"/>
+
+						<p>In other words, users preferences lie in the subspace spanned by the movies components.
+							The challenge is to find such subspace from the incomplete data
+							(see <a href="theory.html", class="smallLink"><b>here</b></a> to know more).
+						</p>
+
+						<p>Our <a href="theory.html", class="smallLink"><b>research</b></a> investigates
+							how to identify subspaces and other more sophisticated
+							patterns from incomplete data. For example, there may be several <i>types</i> of users
+							(e.g., children and adults). In this case,
+							a <a href="theory.html", class="smallLink"><b>union of subspaces</b></a> might be a better
+							prediction model. In some cases multiple users share the same account, in which case it might
+							be better to use a <a href="theory.html", class="smallLink"><b>mixture matrix</b></a>.</p>
+
+							<table>
+									<th><img class="illustration", style="width:80%",
+									 src="Images/single_subspace.png"/></th>
+									 <th><img class="illustration", style="width:80%",
+									 src="Images/union_subspace.png"/></th>
+									 <th><img class="illustration", style="width:80%",
+									 src="Images/mixture.png"/></th>
+								 </tr>
+							 </table>
+
+						<p>
+
+						</p>
+
+				</div>
+
+				</div>
+
+
+	    </div>
+
+	  </div>
+
+		<div class="smallLink">
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><hr>
+			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
+			<br><br><br><br><br><br>
+		</div>
+
+	</div>
+
+</body>
+</html>

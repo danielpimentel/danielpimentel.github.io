@@ -35,8 +35,8 @@ LatexIT.add('p',true);
 				<div class="bigText"> <a href="drug.html", class="smallLink"> Drug Discovery </a> </div>
 				<div class="bigText"> <a href="flares.html", class="smallLink"> Flares Prediction </a> </div>
 				<div class="bigText"> <a href="metagenomics.html", class="smallLink"> Metagenomics </a> </div>
-				<div class="infoText"> <b>Networks Inference</b> </div>
-				<div class="bigText"> <a href="phylogenetics.html", class="smallLink"> Phylogenetics </a> </div>
+				<div class="bigText"> <a href="networks.html", class="smallLink"> Networks Inference </a> </div>
+				<div class="infoText"> <b>Phylogenetics</b> </div>
 				<div class="bigText"> <a href="recommender.html", class="smallLink"> Recommender Systems </a> </div>
 				<div class="bigText"> <a href="rigidity.html", class="smallLink"> Rigidity </a> </div>
 				<div class="bigText"> <a href="ssa.html", class="smallLink"> Space Sit. Awareness </a> </div>
@@ -53,48 +53,31 @@ LatexIT.add('p',true);
 
 					<div class="body">
 
-						<div class="bigText">Networks Inference</div><hr>
+						<div class="bigText">Phylogenetics</div><hr>
 
-						<p><b>We are often interested in infering the topology of a network</b>.
-						Specifically, we want to know which
-					  nodes form part of a subnetwork.  We can think of a network as a collection of nodes
-					  (computers) that connect to some monitors (servers)
-					  through some routers.</p><br><br>
+						<p>Phylogenetis is concerned with estimating the so-called tree of life
+							depicting the evolution of species over time.
+						</p>
 
-					  <img class="illustration", style="width:70%",
-					       src="Images/Monitors.png"/><br>
+						<img class="illustration", style="width:100%",
+					       src="Images/phylo_tree.jpeg"/>
 
-					  <p>When a node pings a monitor (e.g., google), we
-					  can measure the distance (measured in hop counts)
-					  between such node and such monitor. We can construct
-					  a distance matrix where each row represents a
-					  monitor, and each column represents a node.  The
-					  <i>ith</i>
-					  column gives the distances between the <i>ith</i> node and
-					  all the monitors.  But since not every node
-					  pings every monitor, we have incomplete data. </p><br><br>
+						<p>A tree structure assumes that each taxa (species) has a single parent. For example,
+							dogs are descendants of prehistoric wolves, but not of wolves <i>and</i> wildcats (cats ancestors).
+							However, some virus and bacteria often <i>combine</i> to produce new species.
+							This process is called <i>hybridization</i>, and generates cycles, resulting in a
+							<i>network</i>, rather than tree:
+						</p>
 
-					   <img class="illustration", style="width:70%",
-						src="Images/distMat.png"/><br>
+						<img class="illustration", style="width:50%",
+					       src="Images/phylo_net.jpeg"/>
 
-					  <p>In a simplified model, if node <i>i</i> forms part of
-					  subnet <i>k</i>, then the <i>ith</i> column is given by the
-					  sum of (a) the distance between node <i>i</i> and router
-					  <i>k</i>, and (b) the distance between router <i>k</i>and each of
-					  the monitors: </p><br><br>
-
-					   <img class="illustration", style="width:70%",
-						src="Images/distEg.png"/><br>
-
-					  <p>Hence, these measurements lie in a <a href="theory.html", class="smallLink"><b>union of subspaces</b></a>.
-							If we cluster the columns according to their subspaces, we can
-							determine the subnets.
+						<p>Our work investigates machine learning methods to estimate the network of life.
 						</p>
 
 				</div>
 
-
-			  </div>
+				</div>
 
 
 	    </div>
@@ -104,8 +87,7 @@ LatexIT.add('p',true);
 		<div class="smallLink">
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><hr>
+			<br><br><br><br><br><br><br><hr>
 			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
 			<br><br><br><br><br><br>
 		</div>

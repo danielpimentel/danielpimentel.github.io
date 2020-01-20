@@ -8,6 +8,16 @@
     border-color:#999999;
 }
 
+.hugeLink
+{
+    font-size:25px;
+    text-decoration:none;
+    text-align:center;
+    color:#666666;
+    font-family:helvetica;
+    font-weight:lighter;
+}
+
 .bigLink
 {
     font-size:19px;

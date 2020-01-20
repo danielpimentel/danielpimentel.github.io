@@ -35,12 +35,12 @@ LatexIT.add('p',true);
 				<div class="bigText"> <a href="drug.html", class="smallLink"> Drug Discovery </a> </div>
 				<div class="bigText"> <a href="flares.html", class="smallLink"> Flares Prediction </a> </div>
 				<div class="bigText"> <a href="metagenomics.html", class="smallLink"> Metagenomics </a> </div>
-				<div class="infoText"> <b>Networks Inference</b> </div>
+				<div class="bigText"> <a href="networks.html", class="smallLink"> Networks Inference </a> </div>
 				<div class="bigText"> <a href="phylogenetics.html", class="smallLink"> Phylogenetics </a> </div>
 				<div class="bigText"> <a href="recommender.html", class="smallLink"> Recommender Systems </a> </div>
 				<div class="bigText"> <a href="rigidity.html", class="smallLink"> Rigidity </a> </div>
 				<div class="bigText"> <a href="ssa.html", class="smallLink"> Space Sit. Awareness </a> </div>
-				<div class="bigText"> <a href="wood.html", class="smallLink"> Wood Classification </a> </div>
+				<div class="infoText"> <b>Wood Classification</b> </div>
 
 				<br><br><br><br>
 
@@ -53,48 +53,46 @@ LatexIT.add('p',true);
 
 					<div class="body">
 
-						<div class="bigText">Networks Inference</div><hr>
+						<div class="bigText">Wood Classification</div><hr>
 
-						<p><b>We are often interested in infering the topology of a network</b>.
-						Specifically, we want to know which
-					  nodes form part of a subnetwork.  We can think of a network as a collection of nodes
-					  (computers) that connect to some monitors (servers)
-					  through some routers.</p><br><br>
+						<p>Research estimates that approximately 15 billion trees are cut down every year. Some of this
+							wood is produced sustainably, but other is copped illegaly from endangered species and protected
+							forests. One way to mitigate illegal deforestation is to avoid trading illegal wood. The challenge
+							is to know which wood comes from which tree. A few specialized forensic botanists are capable of
+							making these distinctions by looking at fine details in wood texture:
+						</p>
 
-					  <img class="illustration", style="width:70%",
-					       src="Images/Monitors.png"/><br>
+						<table>
+							<tr>
+								<th><img class="illustration", style="width:80%",
+					       src="Images/wood1.png"/></th>
+								 <th><img class="illustration", style="width:80%",
+ 					       src="Images/wood2.png"/></th>
+								 <th><img class="illustration", style="width:80%",
+ 					       src="Images/wood3.png"/></th>
+							 </tr>
+							 <tr>
+ 								<th><img class="illustration", style="width:80%",
+ 					       src="Images/baobab.png"/></th>
+ 								 <th><img class="illustration", style="width:80%",
+  					       src="Images/quiver.png"/></th>
+ 								 <th><img class="illustration", style="width:80%",
+  					       src="Images/monkey.png"/></th>
+ 							 </tr>
+						 </table>
 
-					  <p>When a node pings a monitor (e.g., google), we
-					  can measure the distance (measured in hop counts)
-					  between such node and such monitor. We can construct
-					  a distance matrix where each row represents a
-					  monitor, and each column represents a node.  The
-					  <i>ith</i>
-					  column gives the distances between the <i>ith</i> node and
-					  all the monitors.  But since not every node
-					  pings every monitor, we have incomplete data. </p><br><br>
-
-					   <img class="illustration", style="width:70%",
-						src="Images/distMat.png"/><br>
-
-					  <p>In a simplified model, if node <i>i</i> forms part of
-					  subnet <i>k</i>, then the <i>ith</i> column is given by the
-					  sum of (a) the distance between node <i>i</i> and router
-					  <i>k</i>, and (b) the distance between router <i>k</i>and each of
-					  the monitors: </p><br><br>
-
-					   <img class="illustration", style="width:70%",
-						src="Images/distEg.png"/><br>
-
-					  <p>Hence, these measurements lie in a <a href="theory.html", class="smallLink"><b>union of subspaces</b></a>.
-							If we cluster the columns according to their subspaces, we can
-							determine the subnets.
+						<p>Of course, we cannot expect these handful of scientists to inspect 15 billion
+							trees per year. Our research investigates computer vision and machine learning techniques
+							(such as <b>feature extraction</b>, <b>support vector machines</b>, and <b>neural networks</b>)
+							to classify these trees automatically.
+							The main challenge is the extremely <b>uneven sampling across classes</b>
+							(for example, we have a lot of pine trees, but only a handful of Grandidieri baobabs),
+							which severely complicates training.
 						</p>
 
 				</div>
 
-
-			  </div>
+				</div>
 
 
 	    </div>
@@ -103,9 +101,7 @@ LatexIT.add('p',true);
 
 		<div class="smallLink">
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><hr>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
 			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
 			<br><br><br><br><br><br>
 		</div>

@@ -25,80 +25,81 @@ LatexIT.add('p',true);
 	  </div>
 
 
-		<div class="researchSection">
+	  <div class="teachingSection">
 
 	    <div class="research">
-	      <div class="infoText"> <br> </div>
-	      <div class="bigText"> research </div>
+				<div class="bigText"> <a href="research.html", class="hugeLink"> Appications </a> </div>
+				<div class="bigText"> <a href="bacteria.html", class="smallLink"> Bacteria Classification </a> </div>
+				<div class="bigText"> <a href="biodiversity.html", class="smallLink"> Biodiversity Conservation </a> </div>
+				<div class="bigText"> <a href="dimensionality.html", class="smallLink"> Dimensionality Reduction </a> </div>
+				<div class="infoText"> <b>Drug Discovery</b> </div>
+				<div class="bigText"> <a href="flares.html", class="smallLink"> Flares Prediction </a> </div>
+				<div class="bigText"> <a href="metagenomics.html", class="smallLink"> Metagenomics </a> </div>
+				<div class="bigText"> <a href="networks.html", class="smallLink"> Networks Inference </a> </div>
+				<div class="bigText"> <a href="phylogenetics.html", class="smallLink"> Phylogenetics </a> </div>
+				<div class="bigText"> <a href="recommender.html", class="smallLink"> Recommender Systems </a> </div>
+				<div class="bigText"> <a href="rigidity.html", class="smallLink"> Rigidity </a> </div>
+				<div class="bigText"> <a href="ssa.html", class="smallLink"> Space Sit. Awareness </a> </div>
+				<div class="bigText"> <a href="wood.html", class="smallLink"> Wood Classification </a> </div>
+
+				<br><br><br><br>
+
+				<div class="bigText"> <a href="theory.html", class="hugeLink"> Theory </a> </div>
+
 	    </div>
 
-			<div class="researchInfo">
-			 <p class="infoText"> Daniel's research interests include machine learning,
- 			 signal processing, optimization, statistics, algebraic geometry, and <b>everything data science</b>.
- 		 	 </p>
+	    <div class="researchInfo">
+				<div class="papersList">
 
-			 <p class="infoText"> While Daniel's interests are somewhat theoretical, his work has cool applications in
- 				biology, astroinformatics, neuroscience, vision, networks inference, drug discovery,
- 					and recommender systems, to name a few.
-		 	 </p>
+					<div class="body">
+
+						<div class="bigText">Drug Discovery</div><hr>
+
+						<p>Creating better drugs to treat diseases is a challenging task.
+							An ideal drug should attack the source of the illness and have no secondary effects.
+							To this end, scientists first identify targets (e.g., a proteins) related to
+							a disease, and the goal is to develop a drug that will interact with these targets
+							(to cure the illness) but not with others (to minimize secondary effects).
+						</p>
+
+						<p>This process traditionally involves screening millions of drug compounds (e.g. molecules)
+							in search of a few ones that have the desired interactions with the targets.
+							This produces a drug-target matrix of interactions.
+							The screening process is expensive, so this matrix is highly incomplete.
+						</p><br>
+
+					  <img class="illustration", style="width:50%",
+					       src="Images/drugTarget.png"/><br>
+
+						<p>However, some targets behave similarly, so it is reasonable to assume
+							that the interactions have some structure. For example a
+							<a href="theory.html", class="smallLink"><b>union of subspaces</b></a>
+							or a <a href="theory.html", class="smallLink"><b>mixture matrix</b></a>.
+							Such structures may be exploited to predict
+							the interactions of a new target. This way, given a new target, we may find its
+							interaction with just a few cleverly selected drugs, see which targets have similar
+							interactions, and predict the remaining interactions based on information about
+							these similar targets.
+					  </p>
+
+				</div>
+
+
+			  </div>
+
+
 	    </div>
 
 	  </div>
-
-
-	  <div class="menu">
-	    <a href="subspaces.html", class="smallLink"> subspaces </a> <span class="spacer"> </span>
-	    <a href="drug.html", class="smallLink"> <b>drug discovery</b> </a> <span class="spacer"> </span>
-	    <a href="networks.html", class="smallLink"> networks </a> <span class="spacer"> </span>
-	    <a href="rigidity.html", class="smallLink"> rigidity </a> <span class="spacer"> </span>
-			<a href="deep.html", class="smallLink"> deep learning </a> <span class="spacer"> </span>
-	    <a href="vision.html", class="smallLink"> vision </a>
-	  </div>
-
-
-	  <div class="papersList">
-	    <br>
-	    <div class="bigText"> Drug Discovery </div>
-	  </div>
-
-
-	  <div class="body"><br>
-
-	    <p>Creating better drugs to treat diseases is a challenging task.
-				An ideal drug should attack the source of the illness and have no secondary effects.
-				To this end, scientists first identify targets (e.g., a proteins) related to
-				a disease, and the goal is to develop a drug that will interact with these targets
-				(to cure the illness) but not with others (to minimize secondary effects).
-			</p>
-
-			<p>This process traditionally involves screening millions of drug compounds (e.g. molecules)
-				in search of a few ones that have the desired interactions with the targets.
-				This produces a drug-target matrix of interactions.
-				The screening process is expensive, so this matrix is highly incomplete.
-			</p><br>
-
-		  <img class="illustration", style="width:50%",
-		       src="Images/drugTarget.png"/><br>
-
-			<p>However, some targets behave similarly, so it is reasonable to assume
-				that the interactions have some structure. For example a <b>union of subspaces</b>.
-				This structure may be exploited to predict
-				the interactions of a new target. This way, given a new target, we may find its
-				interaction with just a few cleverly selected drugs, see which targets have similar
-				interactions, and predict the remaining interactions based on information about
-				these similar targets.
-		  </p>
-
-
-	  </div>
-
 
 		<div class="smallLink">
-			<br><br><hr>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><hr>
 			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
 			<br><br><br><br><br><br>
 		</div>
 
 	</div>
+
 </body>
 </html>

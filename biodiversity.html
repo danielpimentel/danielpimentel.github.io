@@ -30,12 +30,12 @@ LatexIT.add('p',true);
 	    <div class="research">
 				<div class="bigText"> <a href="research.html", class="hugeLink"> Appications </a> </div>
 				<div class="bigText"> <a href="bacteria.html", class="smallLink"> Bacteria Classification </a> </div>
-				<div class="bigText"> <a href="biodiversity.html", class="smallLink"> Biodiversity Conservation </a> </div>
+				<div class="infoText"> <b>Bio Conservation</b> </div>
 				<div class="bigText"> <a href="dimensionality.html", class="smallLink"> Dimensionality Reduction </a> </div>
 				<div class="bigText"> <a href="drug.html", class="smallLink"> Drug Discovery </a> </div>
 				<div class="bigText"> <a href="flares.html", class="smallLink"> Flares Prediction </a> </div>
 				<div class="bigText"> <a href="metagenomics.html", class="smallLink"> Metagenomics </a> </div>
-				<div class="infoText"> <b>Networks Inference</b> </div>
+				<div class="bigText"> <a href="networks.html", class="smallLink"> Networks Inference </a> </div>
 				<div class="bigText"> <a href="phylogenetics.html", class="smallLink"> Phylogenetics </a> </div>
 				<div class="bigText"> <a href="recommender.html", class="smallLink"> Recommender Systems </a> </div>
 				<div class="bigText"> <a href="rigidity.html", class="smallLink"> Rigidity </a> </div>
@@ -53,48 +53,30 @@ LatexIT.add('p',true);
 
 					<div class="body">
 
-						<div class="bigText">Networks Inference</div><hr>
+						<div class="bigText">Biodiversity Conservation</div><hr>
 
-						<p><b>We are often interested in infering the topology of a network</b>.
-						Specifically, we want to know which
-					  nodes form part of a subnetwork.  We can think of a network as a collection of nodes
-					  (computers) that connect to some monitors (servers)
-					  through some routers.</p><br><br>
-
-					  <img class="illustration", style="width:70%",
-					       src="Images/Monitors.png"/><br>
-
-					  <p>When a node pings a monitor (e.g., google), we
-					  can measure the distance (measured in hop counts)
-					  between such node and such monitor. We can construct
-					  a distance matrix where each row represents a
-					  monitor, and each column represents a node.  The
-					  <i>ith</i>
-					  column gives the distances between the <i>ith</i> node and
-					  all the monitors.  But since not every node
-					  pings every monitor, we have incomplete data. </p><br><br>
-
-					   <img class="illustration", style="width:70%",
-						src="Images/distMat.png"/><br>
-
-					  <p>In a simplified model, if node <i>i</i> forms part of
-					  subnet <i>k</i>, then the <i>ith</i> column is given by the
-					  sum of (a) the distance between node <i>i</i> and router
-					  <i>k</i>, and (b) the distance between router <i>k</i>and each of
-					  the monitors: </p><br><br>
-
-					   <img class="illustration", style="width:70%",
-						src="Images/distEg.png"/><br>
-
-					  <p>Hence, these measurements lie in a <a href="theory.html", class="smallLink"><b>union of subspaces</b></a>.
-							If we cluster the columns according to their subspaces, we can
-							determine the subnets.
+						<p>Deforestation causes up to 80% of vertebrate species loss. While there are
+							conservation efforts to promote responsible lodging, existint techniques
+							(e.g., tree coverage) do not track biodiversity effects. This is mostly
+							because objectively tracking large amounts of taxa is difficult and expensive.
 						</p>
+
+						<img class="illustration", style="width:100%",
+						 src="Images/tree_coverage.png"/>
+
+						<p>Hence, there is a pressing need to develop new methodology to infer biodiversity metrics.
+							Our insight is that most species are more easily heard than seen. Hence we
+							are investigating novel <b>machine learning</b> techniques to <b>infer biodiversity from
+							sound</b> recorded in tropical forests. Here is a comparison of two soundscapes, recorded in
+							an unhealthy and a healthy forest.
+						</p>
+
+						<img class="illustration", style="width:100%",
+						 src="Images/soundscapes.png"/>
 
 				</div>
 
-
-			  </div>
+				</div>
 
 
 	    </div>
@@ -104,8 +86,7 @@ LatexIT.add('p',true);
 		<div class="smallLink">
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><hr>
+			<br><br><br><br><br><br><br><br><hr>
 			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
 			<br><br><br><br><br><br>
 		</div>
