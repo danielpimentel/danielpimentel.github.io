@@ -1,4 +1,6 @@
 %% Lecture code -- Week 1
+% Courtesy of JEANETTE A MUMFORD
+
 % Single percent signs serve as comments.  
 
 %  We will use .m files for lecture and homework.
