@@ -1,5 +1,6 @@
 %% Lecture code -- Week 1
-% Courtesy of JEANETTE A MUMFORD
+% Code by JEANETTE A MUMFORD
+% (with a few minor changes by Daniel Pimentel)
 
 % Single percent signs serve as comments.  
 
@@ -125,7 +126,7 @@ c^2
 %% 
 % I recommend you don't use the division symbol (either / or \), unless using element-wise division.  
 % Just be careful if you do use it, it may not be intuitive to you, but it is 
-% shorthand for solving systems of equations.  FYI, here's what it does:
+% shorthand for solving systems of equations and pseudoinverse.  FYI, here's what it does:
 
 
 a = reshape(1:4, 2, 2);
@@ -161,7 +162,7 @@ char2 = '3'
 % careful!  This gives a numeric answer
 char2*3
 %% 
-% Loops!  According to the class survey, most of you have written loops 
+% Loops!  Hopefully all of you have written loops 
 % before, so this probably won't be very different from what you've done in the 
 % past.
 
@@ -217,7 +218,7 @@ else
 end  
 %% 
 % *On your own:  *Create a 1x10 row vector of random numbers using randn 
-% (this generate normal values and loop through each value and print whether the 
+% (remember what randn does?), loop through each value, and print whether the 
 % value is pos, neg or 0.
 % 
 % 
@@ -341,13 +342,14 @@ h_legend = legend('sin(x)', 'cos(x)');
 set(h_legend, 'fontsize', 16)
 %% 
 % Mostly we'll be plotting images.  Here I'll use imagesc() and I'll also introduce 
-% you to the meshgrid command.  Images are basically 3 dimensional data sets where 
+% you to the meshgrid command.  You can think of images as 3 dimensional data sets where 
 % 2 dimensions indicate location and the 3rd is 
 % the grayscale value (or color value within a color channel).  
 % 
 % The meshgrid command is a handy tool if you need to generate a matrix with 
 % the row/column indices.  Let's say your image has 3 row and 5 columns, 
-% so the resulting image would be 3 x 5.  Here's how you get matrices of the indices.  
+% so the resulting image would be 3 x 5.  Here's how you get matrices of the indices.
+% (This will be particularly useful when plotting in 3D)
 
 
 x=1:3;
