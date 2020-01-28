@@ -1,4 +1,4 @@
-%% Lecture code -- Week 1
+%% Lecture code for Week 1 -- Matlab Basics
 % Code by JEANETTE A MUMFORD
 % (with a few minor changes by Daniel Pimentel)
 
