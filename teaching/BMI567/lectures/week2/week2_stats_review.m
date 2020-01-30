@@ -58,6 +58,7 @@ hold on
 plot(mn_col2, 0, 'red*', 'markersize', 20)
 hold off
 
+figure
 lt_15 = dat(:,2)<15;
 hist(dat(lt_15, 2))
 
@@ -94,7 +95,6 @@ sqrt(var(dat(:,1)))
 %   outliers are omitted?
 
 
-%(go back to slides)
 %% Law of large numbers
 
 % Use MATLAB to flip a coin!
