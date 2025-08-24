@@ -1,0 +1,359 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJYJHKJG4B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CJYJHKJG4B');
+  </script>
+	<!--Essential items -->
+  	<meta charset="utf-8">
+	<!-- Mobile specifications-->
+	<meta content="width=device-width, intial-scale=1, maximum-scale=1" name=viewport>
+	<!-- CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+	
+	<!-- Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Favicon-->
+	<link href="../logos/SOL_logo_small.png" rel="shortcut icon">
+  <link href = "../css/style.css" rel="stylesheet" type="text/css">
+  <title>SOL Lab</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+
+
+</head>
+
+ <!-- Makes to links open in new -->
+<head>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Get all the <a> elements on the page
+      const links = document.querySelectorAll('a');
+
+      // Loop through each link and set the target attribute to "_blank"
+      links.forEach((link) => {
+        if (!link.classList.contains('no-new-tab')) {
+          link.setAttribute('target', '_blank');
+        }
+      });
+    });
+  </script>
+</head>
+	
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-xl navbar-light bg-dark sticky-top">
+    <a class="navbar-brand no-new-tab" href="../index.html">
+      <div class="logo_subheader">
+        Structure Optimization Learning Lab
+        <br>
+      </div>
+      <div class="logo_header">
+        <img src="../logos/SOL_logo.png" alt="Logo" style="height:40px; width:auto;">
+        <br>
+      </div>
+    </a>
+    <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-left" id="navbarNav">
+      <ul id = "navPills" class=" nav-pills navbar-nav ml-auto">    
+        <li>
+          <a href="../index.html" class="btn btn-s-md btn-white m-b no-new-tab">ABOUT
+          </a>
+        </li>
+        <li>
+          <a href="../people.html" class="btn btn-s-md btn-white m-b no-new-tab">PEOPLE
+          </a>
+        </li>
+        <li>
+          <a href="../research.html" class="btn btn-s-md btn-white m-b no-new-tab">RESEARCH
+          </a>
+        </li>
+        <li>
+          <a href="../publications.html" class="btn btn-s-md btn-white m-b no-new-tab">PUBLICATIONS
+          </a>
+        </li>
+        <li>
+           <a href="../software.html" class="btn btn-s-md btn-white m-b no-new-tab">SOFTWARE
+          </a>
+        </li>
+        <li>
+           <a href="../teaching.html" class="btn btn-s-md btn-white m-b no-new-tab active">TEACHING
+          </a>
+        </li>
+        <li>
+          <a href="../outreach.html" class="btn btn-s-md btn-white m-b no-new-tab">OUTREACH
+         </a>
+         </li> 
+         <li>
+          <a href="../breakingstereotypes.html" class="btn btn-s-md btn-white m-b no-new-tab">BREAKING STEREOTYPES
+         </a>
+         </li>
+      </ul> 
+    </div>
+  </nav>
+
+  <!--Content-->
+  <div class="page-container">
+
+    <!-- Banner -->
+    <img src="../banners/bmi567_banner.jpg" style="width:100%; height:auto; margin-bottom:20px;">
+
+    <!-- General info -->
+    <div class="container" style="padding-bottom:0px">
+      <div class="row">
+        <div class="col-md-10">
+          <h1 class="mb-3">BMI567 — Medical Image Processing</h1>
+          <p>
+            <b>Instructor:</b> <a href = "../members/daniel_pimentel.html" class="no-new-tab">Daniel Pimentel-Alarcón</a>.
+          </p>
+
+          <p>
+            Open to graduate and senior undergraduate students.
+            Hands-on introduction to medical image analysis techniques —
+            formating, segmentation, registration, quantifcation, and classifcation.
+            Students should have prior exposure to basic statistics and coding.
+          </p>
+
+          <!-- Syllabus Container -->
+          <div class="row">
+            <div class="col-md-12">
+              <table class="mytable" id="myTable">
+
+                <tr>
+                  <td name="">
+                    <a href="../teaching_materials/BMI567/BMI567_syllabus.pdf">
+                    <b class="media-item"><img src="../logos/pdf_logo16.png"/> Syllabus </b> <b class="media-text"></b> 
+                    </a>
+                  </td>
+                </tr>
+
+              </table>  
+            </div>
+          </div>
+          <br>
+
+          <h2 class="mb-3">Textbook</h2>
+          <p>
+            Applied Medical Image Processing: A Basic Course, by Wolfgang Birkfellner, Second Edition.
+          </p>
+
+          
+
+          <h2 class="mb-3">Lecture Materials</h2>
+
+          <!-- Lectures Container -->
+          <div class="row">
+            <div class="col-md-12">
+              <table class="mytable" id="myTable">
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Week 1 </b>
+                    <a href = "../teaching_materials/BMI567/lectures/week1/week1_matlab_basics.m"><b class="media-text">
+                      — <img src="../logos/matlab_logo16.png"/> week1_matlab_basics.m </b></a>
+                  </td>   
+                </tr>
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Week 2 </b>
+                    <a href = "../teaching_materials/BMI567/lectures/week2/week2_stats_review.m"><b class="media-text">
+                      — <img src="../logos/matlab_logo16.png"/> week2_stats_review.m </b></a>
+                    <a href = "../teaching_materials/BMI567/lectures/week2/dat.mat"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> dat.mat </b></a>
+                  </td>   
+                </tr>
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Week 3 </b>
+                    <a href = "../teaching_materials/BMI567/lectures/week3/week3_scaling.m"><b class="media-text">
+                      — <img src="../logos/matlab_logo16.png"/> week3_scaling.m </b></a>
+                    <a href = "../teaching_materials/BMI567/lectures/week3/spine.jpg"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> spine.jpg </b></a>
+                  </td>   
+                </tr>
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Week 5 </b>
+                    <a href = "../teaching_materials/BMI567/lectures/week5/week5_filtering.m"><b class="media-text">
+                      — <img src="../logos/matlab_logo16.png"/> week5_filtering.m </b></a>
+                    <a href = "../teaching_materials/BMI567/lectures/week5/week5_thresholding.m"><b class="media-text">
+                      — <img src="../logos/matlab_logo16.png"/> week5_thresholding.m </b></a>
+                    <a href = "../teaching_materials/BMI567/lectures/week5/epith.mat"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> epith.mat </b></a>
+                    <a href = "../teaching_materials/BMI567/lectures/week5/epith_ig.mat"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> epith_ig.mat </b></a>
+                  </td>   
+                </tr>
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Week 6 </b>
+                    <a href = "../teaching_materials/BMI567/lectures/week6/week6_fourier.m"><b class="media-text">
+                      — <img src="../logos/matlab_logo16.png"/> week6_fourier.m </b></a>
+                  </td>   
+                </tr>
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Week 8 </b>
+                    <a href = "../teaching_materials/BMI567/lectures/week8/week8_morphology.m"><b class="media-text">
+                      — <img src="../logos/matlab_logo16.png"/> week8_morphology.m </b></a>
+                    <a href = "../teaching_materials/BMI567/lectures/week8/pacman.png"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> pacman.png </b></a>
+                    <a href = "../teaching_materials/BMI567/lectures/week8/lung.jpg"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> lung.jpg </b></a>
+                  </td>   
+                </tr>
+
+              </table>  
+            </div>
+          </div>
+          <br>
+
+
+
+
+          <h2 class="mb-3">Homework</h2>
+
+          <!-- Homework Container -->
+          <div class="row">
+            <div class="col-md-12">
+              <table class="mytable" id="myTable">
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Homework 1 </b>
+                    <a href = "../teaching_materials/BMI567/hws/hw1/BMI567_hw1_Basics.pdf"><b class="media-text">
+                      — <img src="../logos/pdf_logo16.png"/> Basic Image Manipulation </b></a>
+                    <a href = "../teaching_materials/BMI567/hws/hw1/brain.jpg"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> brain.jpg </b></a>
+                  </td>   
+                </tr>
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Homework 2 </b>
+                    <a href = "../teaching_materials/BMI567/hws/hw2/BMI567_hw2_Hough.pdf"><b class="media-text">
+                      — <img src="../logos/pdf_logo16.png"/> Hough Transform </b></a>
+                    <a href = "../teaching_materials/BMI567/hws/hw2/leg_before.jpg"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> leg_before.jpg </b></a>
+                    <a href = "../teaching_materials/BMI567/hws/hw2/leg_after.jpg"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> leg_after.jpg </b></a>
+                  </td>   
+                </tr>
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Homework 3 </b>
+                    <a href = "../teaching_materials/BMI567/hws/hw3/BMI567_hw3_fourier_sobel_transformation_registration.pdf"><b class="media-text">
+                      — <img src="../logos/pdf_logo16.png"/> Fourier, Sobel, Transformations, and Registration </b></a>
+                    <a href = "../teaching_materials/BMI567/hws/hw3/liver.jpeg"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> liver.jpeg </b></a>
+                  </td>   
+                </tr>
+
+                <tr>
+                  <td name="">
+                    <b class="media-item"> Homework 4 </b>
+                    <a href = "../teaching_materials/BMI567/hws/hw4/BMI567_hw4_morphology.pdf"><b class="media-text">
+                      — <img src="../logos/pdf_logo16.png"/> Morphology Segmentation </b></a>
+                    <a href = "../teaching_materials/BMI567/hws/hw4/metastatic.jpg"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> metastatic.jpg </b></a>
+                    <a href = "../teaching_materials/BMI567/hws/hw4/ground_truth.png"><b class="media-text">
+                      — <img src="../logos/matfile_logo16.png"/> ground_truth.png </b></a>
+                  </td>   
+                </tr>
+
+
+              </table>  
+            </div>
+          </div>
+          <br>
+
+          <h2 class="mb-3">Project</h2>
+
+          <!-- Project Container -->
+          <div class="row">
+            <div class="col-md-12">
+              <table class="mytable" id="myTable">
+
+                <tr>
+                  <td name="">
+                    <a href = "../teaching_materials/BMI567/project/BMI567_proj_description.pdf"><b class="media-text">
+                      <img src="../logos/pdf_logo16.png"/> Project Description (due 03/10) </b></a>
+                    <a href = "../teaching_materials/BMI567/project/Figure_Example.jpg"><b class="media-text">
+                      — <img src="../logos/pdf_logo16.png"/> Figure_Example.pdf </b></a>
+                    <a href = "../teaching_materials/BMI567/project/BMI567_Project_YOURNAME.tex"><b class="media-text">
+                      — <img src="../logos/latex_logo16.png"/> Report_Template.tex </b></a>
+                  </td>   
+                </tr>
+
+
+              </table>  
+            </div>
+          </div>
+          <br>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  <!-- End Page Container -->
+  </div>
+
+	<hr/>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/jquery-3.4.1.js"></script>
+ <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+  
+</body>
+
+<!-- FOOTER -->
+<footer style="background:#ffffff00; color:#ecf0f1; padding:40px 20px; font-size:14px;">
+  <center>
+    <a href = "https://www.wisc.edu/">
+    <p style="margin:0;"> <img src="../logos/uw_logo_small.png" alt="Logo" style="height:40px; width:auto;"> University of Wisconsin-Madison </p>
+    </a>
+    <p style="margin:0;">&copy; 2025 Daniel Pimentel-Alarcón. All rights reserved.</p>
+  </center>
+</footer>
+
+
+</html>

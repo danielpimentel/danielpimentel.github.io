@@ -1,102 +1,398 @@
-<html>
+<!doctype html>
 
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<script src="swap.js"></script>
-<script type="text/javascript"
-	src="http://latex.codecogs.com/latexit.js"></script>
-<script type="text/javascript">
-LatexIT.add('p',true);
-</script>
-<link rel=stylesheet href="style.css" type="text/css">
-<title>Daniel Pimentel</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJYJHKJG4B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CJYJHKJG4B');
+  </script>
+	<!--Essential items -->
+  <meta charset="utf-8">
+	<!-- Mobile specifications-->
+	<meta content="width=device-width, intial-scale=1, maximum-scale=1" name=viewport>
+	<!-- CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+	<!-- Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"  rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Favicon-->
+	<link href="logos/SOL_logo_small.png" rel="shortcut icon">
+  <link href = "css/style.css" rel="stylesheet" type="text/css">
+  <title>SOL Lab</title>
+  <meta name="description" content="Learning low-dimensional structure in messy data">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"> 
+  </script>
+
+
 </head>
 
-<body align="center">
-	<div>
-	  <div class="header">
-	    <a href="index.html", class="bigLink"> Daniel Pimentel-Alarcón </a> <span class="spacer"> </span>
-	    <a href="publications.html", class="smallLink"> papers &amp code </a> <span class="spacer"> </span>
-	    <a href="talks.html", class="smallLink"> talks </a> <span class="spacer"> </span>
-	    <a href="teaching.html", class="smallLink"> teaching </a> <span class="spacer"> </span>
-			<a href="students.html", class="smallLink"> students </a> <span class="spacer"> </span>
-	    <a href="research.html", class="smallLink"> research </a> <span class="spacer"> </span>
-			<a href="hobbies.html", class="smallLink"> hobbies </a>
-	  </div>
+ <!-- Makes to links open in new -->
+<head>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Get all the <a> elements on the page
+      const links = document.querySelectorAll('a');
 
-	  <div class="infoSection">
+      // Loop through each link and set the target attribute to "_blank"
+      links.forEach((link) => {
+        if (!link.classList.contains('no-new-tab')) {
+          link.setAttribute('target', '_blank');
+        }
+      });
+    });
+  </script>
+</head>
+	
+<body>
 
-	    <div class="info">
-	      <div class="infoText"> <br><br> </div>
-	      <div class="bigText"> about </div>
-	      <div class="infoText"> WID 2176, </div>
-	      <div class="infoText"> 330 N Orchard St, </div>
-	      <div class="infoText"> Madison, WI, 53715. </div>
-	      <div class="infoText"> pimentelalar@wisc.edu </div>
-	    </div>
+  <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-xl navbar-light bg-dark sticky-top">
+    <a class="navbar-brand  no-new-tab" href="index.html">
+      <div class="logo_subheader">
+        Structure Optimization Learning Lab
+        <br>
+      </div>
+      <div class="logo_header">
+        <img src="logos/SOL_logo.png" alt="Logo" style="height:40px; width:auto;">
+        <br>
+      </div>
+    </a>
+    <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-left" id="navbarNav">
+      <ul id = "navPills" class=" nav-pills navbar-nav ml-auto">    
+        <li>
+          <a href="index.html" class="btn btn-s-md btn-white m-b no-new-tab active">ABOUT
+          </a>
+        </li>
+        <li>
+          <a href="people.html" class="btn btn-s-md btn-white m-b no-new-tab">PEOPLE
+          </a>
+        </li>
+        <li>
+          <a href="research.html" class="btn btn-s-md btn-white m-b no-new-tab">RESEARCH
+          </a>
+        </li>
+        <li>
+          <a href="publications.html" class="btn btn-s-md btn-white m-b no-new-tab">PUBLICATIONS
+          </a>
+        </li>
+        <li>
+           <a href="software.html" class="btn btn-s-md btn-white m-b no-new-tab">SOFTWARE
+          </a>
+        </li>
+        <li>
+           <a href="teaching.html" class="btn btn-s-md btn-white m-b no-new-tab">TEACHING
+          </a>
+        </li>
+        <li>
+          <a href="outreach.html" class="btn btn-s-md btn-white m-b no-new-tab">OUTREACH
+         </a>
+         </li> 
+         <li>
+          <a href="breakingstereotypes.html" class="btn btn-s-md btn-white m-b no-new-tab">BREAKING STEREOTYPES
+         </a>
+         </li>
+      </ul> 
+    </div>
+  </nav>
+ 
 
-	    <div class="photo">
-	      <img style="width:100%", src="photos/news.jpg"/>
+  <!--Photo Carousel-->
+  <div class='container-fluid' style='padding:0px'>
+    <div class="row-fluid">
+      <div class="col-md-12 carousel" style="padding:0px">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" style="box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8)" 
+              src="carousel/daniel_bmi_carousel.JPG" alt="Slide 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Daniel Pimentel-Alarcón presents at the BMI Seminar.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/huanran_meta_carousel.jpg" alt="Slide 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Huanran Li accepts an internship offer from Meta.</h5>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/daniel_halloween_carousel.JPEG" alt="Slide 3">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Daniel Pimentel-Alarcón kicks off the WID Seminar Series — on Halloween.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/ben_mmls_carousel.jpeg" alt="Slide 4">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Ben Kizaric presents his poster at MMLS.</h5>   
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/daniel_mcpr_carousel.JPG" alt="Slide 5">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Keynote address from Daniel Pimentel-Alarcón at MCPR.</h5>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/akhilesh_problem_carousel.jpeg" alt="Slide 6">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Akhilesh Soni and Jeff Linderoth trying to solve Subspace Clustering with Integer Programming.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/daniel_enoan_carousel.JPG" alt="Slide 7">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Keynote address from Daniel Pimentel-Alarcón at ENOAN.</h5>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" id="applegate" src="carousel/huanran_taaward_carousel.jpg" alt="Slide 8">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Huanran Li receives the ECE Gerald Holdridge Teaching Assistant Award.</h5>         
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/daniel_wsf_carousel.jpeg" alt="Slide 9">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Daniel Pimentel-Alarcón and Claudia Solís-Lemus advertise El Zoominario at the WI Science Festival. </h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/akhilesh_solution_carousel.jpeg" alt="Slide 10">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Akhilesh Soni finds the key for Subspace Clustering with Integer Programming.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/daniel_latinx_carousel.jpeg" alt="Slide 11">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Daniel Pimentel-Alarcón talks about waffle cones at Celebrating Latinx Voices in STEAM.</h5>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/huanran_mmls_carousel.jpeg" alt="Slide 12">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Huanran Li presents his poster at MMLS.</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/daniel_sciprov_carousel.jpeg" alt="Slide 13">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Daniel Pimentel-Alarcón presents at Sci-prov — where science meets improv comedy.</h5>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/huanran_amfam_carousel.jpeg" alt="Slide 14">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Huanran Li presents progress at AmFam - Data Science Institute.</h5>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/sol_carnitas_carousel.jpeg" alt="Slide 15">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>SOL and Solís-Lemust Labs at MMLS and Carnitas Uruapan, Chicago.</h5>                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="carousel/daniel_osborne_carousel.JPG" alt="Slide 16">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Daniel Pimentel-Alarcón explains his research to K12 students at Osborne High School.</h5>                
+              </div>
+            </div>
+          <!--Photo Carousel Forwards and Backwards Buttons-->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-				<br><br><hr>
+  <!--Content-->
+  <div class="page-container">
+    <div class='container'>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="who-we-are">
 
-				<div class="body">
+            <h1>About</h1>
 
-			    <br>
+            <p>
+            Modern data can be seen as a giant web of interconnected variables — <b>like a social network of numbers.</b>
+            By learning the hidden patterns in data (aka structure), we can understand out how the system behind it really works.
+            This knowledge is the driving force behind AI, self-driving cars, disease cures, climate models, Spotify playlists,
+            and countless other discoveries.
+            </p>
 
-					Daniel is an Assistant Professor in <a class="bodyLink", href="https://www.biostat.wisc.edu/",
-						target="_blank"> Biostatistics</a> at the <a class="bodyLink", href="http://www.wisc.edu",
-				    target="_blank">University  of Wisconsin-Madison</a>, where he has a joint appointment with
-						the <a class="bodyLink", href="http://www.wid.wisc.edu", target="_blank">Wisconsin Institute for Discovery</a>.
-						His research interests include machine learning, signal processing, optimization, statistics,
-						algebraic geometry, and <b>everything data science</b>.
+            <p>
+            The challenge is that data is often messy — noisy, incomplete, biased, scarce — so classical methods like PCA are not enough.
+            <b>We create the next generation of methods that can uncover patterns hidden in messy data.</b>
+            </p>
 
-					<p>Previously, Daniel was an Assistant Professor in Computer Science at <a class="bodyLink", href="http://gsu.edu",
-						target="_blank"> Georgia State University</a>. Before GSU, Daniel was a postdoc at the
-						<a class="bodyLink", href="http://wid.wisc.edu", target="_blank">
-			    Wisconsin Institute for Discovery </a>
-			    working with professors
-			    <a class="bodyLink", href="http://nowak.ece.wisc.edu", target="_blank"> Robert Nowak</a>,
-					<a class="bodyLink", href="https://www.math.wisc.edu/~boston", target="_blank"> Nigel Boston</a>,
-			    <a class="bodyLink", href="http://pages.cs.wisc.edu/~swright", target="_blank"> Stephen Wright</a> and
-			    <a class="bodyLink", href="https://willett.ece.wisc.edu", target="_blank"> Rebecca Willett</a>.
-			    </p>
+          </div>  
+        </div>
+<!--News Scroll Header-->
+        <div class="col-md-4">
+          <h2 id="inTheNewsHeading">Lab News</h2>  
+            <div class="news-container" style="height: 750px; overflow-y: auto;">
+
+                <!--Beginning of section-->              
+                <div class="list-group-item">
+                  <div class="newsDate">
+                    <b>JUNE 25, 2025</b>
+                  </div>
+                  <div class="newsMainContent">
+                    Keynote address at 
+                    <a href="https://mcpr2025.eventos.cimat.mx/keynote_mcpr2025"><b>MCPR</b></a> by
+                    <a href="members/daniel_pimentel.html" class="no-new-tab"><b>Daniel Pimentel-Alarcón</b></a>.
+                  </div>
+                </div>
+                <!--End of section-->
+
+                <!--Beginning of section-->              
+                <div class="list-group-item">
+                  <div class="newsDate">
+                    <b>JUNE 23, 2025</b>
+                  </div>
+                  <div class="newsMainContent">
+                    Keynote address at 
+                    <a href="https://enoan-emmn-2025.eventos.cimat.mx/inicio_enoan_emmn_2025"><b>ENOAN</b></a> by
+                    <a href="members/daniel_pimentel.html" class="no-new-tab"><b>Daniel Pimentel-Alarcón</b></a>.
+                  </div>
+                </div>
+                <!--End of section-->
+
+                <!--Beginning of section-->              
+                <div class="list-group-item">
+                  <div class="newsDate">
+                    <b>MAY 19, 2025</b>
+                  </div>
+                  <div class="newsMainContent">
+                    Congrats to <a href="members/huanran_li.html" class="no-new-tab"><b>Huanran Li</b></a> for his new internship at
+                    <a href="https://www.meta.com/"><b>META</b></a>.
+                  </div>
+                </div>
+                <!--End of section-->
+
+                <!--Beginning of section-->              
+                <div class="list-group-item">
+                  <div class="newsDate">
+                    <b>APRIL 11, 2025</b>
+                  </div>
+                  <div class="newsMainContent">
+                    Congrats to <a href="members/sidd_baskar.html" class="no-new-tab"><b>Sidd Baskar</b></a> and
+                    <a href = "members/karan_rupashree.html" class="no-new-tab"><b>Karan Rupashree</b></a> for their accepted paper at 
+                    <a href="https://2025.ieee-isit.org/"><b>ISIT</b></a>.
+                  </div>
+                </div>
+                <!--End of section-->
+
+                <!--Beginning of section-->              
+                <div class="list-group-item">
+                  <div class="newsDate">
+                    <b>APRIL 11, 2025</b>
+                  </div>
+                  <div class="newsMainContent">
+                    Congrats to
+                    <a href = "members/huanran_li.html" class="no-new-tab"><b>Huanran Li</b></a> and
+                    <a href = "members/manh_nguyen.html" class="no-new-tab"><b>Manh Nguyen</b></a> for their accepted paper at 
+                    <a href="https://2025.ieee-isit.org/"><b>ISIT</b></a>.
+                  </div>
+                </div>
+                <!--End of section-->
+
+                <!--Beginning of section-->              
+                <div class="list-group-item">
+                  <div class="newsDate">
+                    <b>MARCH 2025</b>
+                  </div>
+                  <div class="newsMainContent">
+                    Congrats to
+                    <a href = "members/xiaoxu_rong.html" class="no-new-tab"><b>Xiaoxu Rong</b></a> for her accepted paper at 
+                    <a href="https://www.pas-meeting.org/2025-meeting-std/"><b>PAS</b></a>.
+                  </div>
+                </div>
+                <!--End of section-->
 
 
-			    <p>Daniel did his PhD in Electrical and Computer Engineering at <a class="bodyLink", href="http://www.wisc.edu",
-			    target="_blank"> UW-Madison</a> with
-			    professor <a class="bodyLink",
-			    href="http://nowak.ece.wisc.edu", target="_blank"> Robert
-			    Nowak</a>.</p>
 
-			    <p>He obtained Master's degrees in Mathematics and
-			    in Electrical and Computer Engineering, both
-			    at <a class="bodyLink", href="http://www.wisc.edu",
-			    target="_blank"> UW-Madison</a>.</p>
+              <!-- Close list-group -->
+              </div>
+            <!-- Close col-md-12 -->
+            </div>
+          <!-- Close col-md-4 -->
+          </div>
+      <!-- Close row -->
+      </div>  
+    <!-- Close container -->
+    </div>
 
-			    <p>Daniel is originally from Mexico City, where he obtained
-			    undergraduate degrees in Telematics Engineering and in
-			    Computer Engineering, both
-			    at <a class="bodyLink", href="https://www.itam.mx/en",
-			    target="_blank"> ITAM</a>.</p>
-
-			  </div>
-
-	    </div>
+    <hr/>
 
 
-
-	  </div>
-
-
-
-		<div class="smallLink">
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
-			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
-			<br><br><br><br><br><br>
-		</div>
+  <!-- Close Paige Container -->
+  </div>
 
 
-	</div>
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+  
 </body>
+
+<!-- FOOTER -->
+<footer style="background:#ffffff00; color:#ecf0f1; padding:40px 20px; font-size:14px;">
+  <center>
+    <a href = "https://www.wisc.edu/">
+    <p style="margin:0;"> <img src="logos/uw_logo_small.png" alt="Logo" style="height:40px; width:auto;"> University of Wisconsin-Madison </p>
+    </a>
+    <p style="margin:0;">&copy; 2025 Daniel Pimentel-Alarcón. All rights reserved.</p>
+  </center>
+</footer>
+
 </html>

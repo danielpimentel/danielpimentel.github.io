@@ -1,188 +1,484 @@
-<html>
+<!doctype html>
 
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<script src="swap.js"></script>
-<script type="text/javascript"
-	src="http://latex.codecogs.com/latexit.js"></script>
-<script type="text/javascript">
-LatexIT.add('p',true);
-</script>
-<link rel=stylesheet href="style.css" type="text/css">
-<title>Daniel Pimentel</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJYJHKJG4B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CJYJHKJG4B');
+  </script>
+	<!--Essential items -->
+  	<meta charset="utf-8">
+	<!-- Mobile specifications-->
+	<meta content="width=device-width, intial-scale=1, maximum-scale=1" name=viewport>
+	<!-- CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link href = "css/style.css" rel="stylesheet" type="text/css">
+	<!-- Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<!-- Favicon-->
+	<link href="logos/SOL_logo_small.png" rel="shortcut icon">
+  <title>SOL Lab</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
 </head>
 
-<body align="center">
-	<div>
-	  <div class="header">
-			<a href="index.html", class="bigLink"> Daniel Pimentel-Alarcón </a> <span class="spacer"> </span>
-	    <a href="publications.html", class="smallLink"> <b>papers &amp code</b> </a> <span class="spacer"> </span>
-	    <a href="talks.html", class="smallLink"> talks </a> <span class="spacer"> </span>
-	    <a href="teaching.html", class="smallLink"> teaching </a> <span class="spacer"> </span>
-			<a href="students.html", class="smallLink"> students </a> <span class="spacer"> </span>
-	    <a href="research.html", class="smallLink"> research </a> <span class="spacer"> </span>
-			<a href="hobbies.html", class="smallLink"> hobbies </a>
-	  </div>
+ <!-- Makes to links open in new -->
+<head>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Get all the <a> elements on the page
+      const links = document.querySelectorAll('a');
 
-	  <div class="papersList">
+      // Loop through each link and set the target attribute to "_blank"
+      links.forEach((link) => {
+        if (!link.classList.contains('no-new-tab')) {
+          link.setAttribute('target', '_blank');
+        }
+      });
+    });
+  </script>
+</head>
+	
+<body>
 
-	    <br>
-	    <div class="bigText"> papers &amp code </div>
-	    <br><hr><br>
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-xl navbar-light bg-dark sticky-top">
+    <a class="navbar-brand no-new-tab" href="index.html">
+      <div class="logo_subheader">
+        Structure Optimization Learning Lab
+        <br>
+      </div>
+      <div class="logo_header">
+        <img src="logos/SOL_logo.png" alt="Logo" style="height:40px; width:auto;">
+        <br>
+      </div>
+    </a>
+    <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-left" id="navbarNav">
+      <ul id = "navPills" class=" nav-pills navbar-nav ml-auto">    
+        <li>
+          <a href="index.html" class="btn btn-s-md btn-white m-b no-new-tab">ABOUT
+          </a>
+        </li>
+        <li>
+          <a href="people.html" class="btn btn-s-md btn-white m-b no-new-tab">PEOPLE
+          </a>
+        </li>
+        <li>
+          <a href="research.html" class="btn btn-s-md btn-white m-b no-new-tab">RESEARCH
+          </a>
+        </li>
+        <li>
+          <a href="publications.html" class="btn btn-s-md btn-white m-b no-new-tab active">PUBLICATIONS
+          </a>
+        </li>
+        <li>
+           <a href="software.html" class="btn btn-s-md btn-white m-b no-new-tab">SOFTWARE
+          </a>
+        </li>
+        <li>
+           <a href="teaching.html" class="btn btn-s-md btn-white m-b no-new-tab">TEACHING
+          </a>
+        </li>
+        <li>
+          <a href="outreach.html" class="btn btn-s-md btn-white m-b no-new-tab">OUTREACH
+         </a>
+         </li> 
+         <li>
+          <a href="breakingstereotypes.html" class="btn btn-s-md btn-white m-b no-new-tab">BREAKING STEREOTYPES
+         </a>
+         </li>
+      </ul> 
+    </div>
+  </nav>
 
-	    <ul>
+  <div class="page-container">
 
-				<li>
-		<b> Tensor Methods for Nonlinear Matrix Completion </b> <br>
-		G. Ongie, D.P.-A., L. Balzano, R. Willett, R. Nowak<br>
-		<i>Under Review, 2020</i>.
-		<a href="papers/ladmc-simods.pdf"><img src="Images/pdficon16.png"/></a></li><br>
+    
+    <div class='container publicationsFilters'>
 
-				<li>
-		<b> Prediction of Functional Markers of Mass Cytometry Data Via Deep Learning </b> <br>
-		C. Solís-Lemus, X. Ma, M. Hostetter II, S. Kundu, P. Qiu, D.P.-A.<br>
-		<i>Biostatistics and Bioinformatics, Springer., 2019</i>.
-		<a href="papers/cytometry.pdf"><img src="Images/pdficon16.png"/></a></li><br>
+      <div id='filterHeading' class='row'>
+        <div class='col-md-12'>
+          <h1 >SOL Publications</h1>
+        </div>
+      </div>
+    	
 
-				<li>
-		<b> GLIMPS: A Greedy Mixed-Integer Approach for Super Robust Matched Subspace Detection </b> <br>
-		M. Rahman, D.P.-A.<br>
-		<i>Allerton, 2019</i>.
-		<a href="papers/glimps.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+    <!-- Publications Container -->
+    <div class='container publications'>
 
-				<li>
-		<b> Fusion Subspace Clustering: Full & Incomplete Data </b> <br>
-		D.P.-A., U. Mahmood<br>
-		<i>Preprint, 2018</i>.
-		<a href="papers/fusionSC.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+      <div class="row">
+        <div class="col-md-12 pl-md-5 pr-md-5">
+          <table class="mytable" id="myTable">
 
-				<li>
-		<b> Mixture Matrix Completion </b> <br>
-		D.P.-A.<br>
-		<i>Neural Information Processing Systems, 2018</i>.
-		<a href="papers/MixtureMC.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+<!-- Year 2025 -->
+            <tr class="header">
+              <th style="width:60%;">2025</th>
+            </tr>
 
-				<li>
-		<b> Breaking the Limits of Subspace Inference </b> <br>
-		C. Solís-Lemus, D.P.-A.<br>
-		<i>Allerton, 2018</i>.
-		<a href="papers/breakingSI.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+<!-- Publications -->
+            <tr>  
+              <td> A. Soni, J. Linderoth, J. Luedtke, and <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "An integer programming approach to subspace clustering with missing data".
+                <i>INFORMS Journal on Optimization</i>. 
+                2025.
+              </td>
+            </tr>
 
-				<li>
-		<b> Leveraging Machine Learning for High-Resolution Restoration of Satellite Imagery </b> <br>
-		D.P.-A., A. Tiwari, D. Hope, S. Jefferies<br>
-		<i>AMOS, 2018</i>.
-		<a href="papers/satelliteLasso.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+            <tr>  
+              <td> <a href = "members/sidd_baskar.html" class="no-new-tab"><b>S. Baskar</b></a>,
+                <a href = "members/karan_rupashree.html" class="no-new-tab"><b>K. Rupashree</b></a>, and 
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Deep union completion".
+                <i>AAAI Conference on Artificial Intelligence</i>. 
+                2025.
+              </td>
+            </tr>
 
-				<li>
-		<b> Selective Erasures for High-Dimensional Robust Subspace Tracking </b> <br>
-		D.P.-A.<br>
-		<i>SPIE Defense + Commercial Sensing, 2018</i>.
-		<a href="papers/robustTracking.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+            <tr>  
+              <td> <a href = "members/xiaoxu_rong.html" class="no-new-tab"><b>X. Rong</b></a>, R. McAdams,
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, and Claudette Adegboro.
+                "Machine learning analysis of cardiotocographs (CTGs) for predicting neonatal encephalopathy (NE) among term infants".
+                <i>Pediatric Academic Societies</i>. 
+                2025.
+              </td>
+            </tr>
 
-				<li>
-		<b> Low Algebraic Dimension Matrix Completion </b> <br>
-		D.P.-A., G. Ongie, L. Balzano, R. Willett, R. Nowak<br>
-		<i>Allerton, 2017</i>.
-		<a href="papers/LADMC.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+            <tr>  
+              <td> <a href = "members/huanran_li.html" class="no-new-tab"><b>Huanran Li</b></a>,
+                <a href = "members/manh_nguyen.html" class="no-new-tab"><b>M. Nguyen</b></a>, and
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Deep fusion: Capturing dependencies in contrastive learning via transformer projection heads".
+                <i>IEEE International Symposium on Information Theory (ISIT)</i>. 
+                2025.
+              </td>
+            </tr>
 
-		    <li>
-		<b> Adversarial Principal Component Analysis </b> <br>
-		D.P.-A., A. Biswas, C. Solís-Lemus<br>
-		<i>ISIT, 2017</i>.
-		<a href="papers/adversarialPCA.pdf"><img src="Images/pdficon16.png"/></a>
-		<a href="code/adversarialPCA.zip"><img src="Images/matlabicon.png"/></a> </li><br>
+            <tr>  
+              <td> <a href = "members/karan_rupashree.html" class="no-new-tab"><b>K. Rupashree</b></a>,
+                <a href = "members/sidd_baskar.html" class="no-new-tab"><b>S. Baskar</b></a>, and
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Latent union completion".
+                <i>IEEE International Symposium on Information Theory (ISIT)</i>. 
+                2025.
+              </td>
+            </tr>
 
-	      <li>
-		<b> Random Consensus Robust PCA </b> <br>
-		D.P.-A., R. Nowak<br>
-		<i>AISTATS, Electronic Journal of Statistics, 2017</i>.
-		<a href="papers/R2PCA.pdf"><img src="Images/pdficon16.png"/></a>
-		<a href="code/R2PCA.zip"><img src="Images/matlabicon.png"/></a> </li><br>
+<!-- Year 2024 -->
+            <tr class="header">
+              <th style="width:60%;">2024</th>
+            </tr>
 
-	      <li>
-		<b> Mixture Regression as Subspace Clustering </b> <br>
-		D.P.-A., L. Balzano, R. Marcia, R. Nowak, R. Willett<br>
-		<i>SAMPTA, 2017</i>.
-		<a href="papers/MR.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+<!-- Publications -->
+            <tr>  
+              <td> <a href = "members/huanran_li.html" class="no-new-tab"><b>H. Li</b></a> and
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Group-sparse subspace clustering with elastic stars".
+                <i>IEEE International Symposium on Information Theory (ISIT)</i>. 
+                2024.
+              </td>
+            </tr>
 
-	      <li>
-		<b> A Simpler Approach to Low-Rank Tensor Canonical Polyadic Decomposition </b> <br>
-		D.P.-A.<br>
-		<i>Allerton, 2016</i>.
-		<a href="papers/TD.pdf"><img src="Images/pdficon16.png"/></a>
-		<a href="code/TD.zip"><img src="Images/matlabicon.png"/></a> </li><br>
+            <tr>  
+              <td> <a href = "members/huanran_li.html" class="no-new-tab"><b>H. Li</b></a>,
+                <a href = "members/jeremy_johnson.html" class="no-new-tab"><b>J. Johnson</b></a>, and 
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Fusion over the grassmannian for high-rank matrix completion".
+                <i>IEEE International Symposium on Information Theory (ISIT)</i>. 
+                2024.
+              </td>
+            </tr>
 
-	      <li>
-		<b> Necessary and Sufficient Conditions for Sketched Subspace Clustering </b> <br>
-		D.P.-A., L. Balzano, R. Nowak<br>
-		<i>Allerton, 2016</i>.
-		<a href="papers/sketchedSC.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+            <tr>  
+              <td> A. Singh, <a href = "members/mike_fromandi.html" class="no-new-tab"><b>M. Fromandi</b></a>,
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, D. Werling, A. Gasch, and J.P. Yu.
+                "Intrinsic gene expression correlates of the biophysically modeled diffusion MRI signal in autism spectrum disorder".
+                <i>Biological Psychiatry</i>. 
+                2024.
+              </td>
+            </tr>
 
-	      <li>
-		<b> A Converse to Low-Rank Matrix Completion </b> <br>
-		D.P.-A., R. Nowak<br>
-		<i>ISIT, 2016</i>.
-		<a href="papers/converse.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+<!-- Year 2023 -->
+            <tr class="header">
+              <th style="width:60%;">2023</th>
+            </tr>
 
-	      <li>
-		<b> The Information-Theoretic Requirements of Subspace Clustering with Missing Data </b> <br>
-		D.P.-A., R. Nowak<br>
-		<i>ICML, 2016</i>.
-		<a href="papers/infoTheoreticSCMD.pdf"><img src="Images/pdficon16.png"/></a>
-		<a href="code/infoTheoreticSCMD.zip"><img src="Images/matlabicon.png"/></a> </li><br>
+<!-- Publications -->
+             <tr>  
+              <td> J. Rattray, R. Lowhorn, R. Walden, P. Márquez-Zacarías, E. Molotkova, G. Perron, C. Solís-Lemus,
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, and Sam Brown.
+                "Machine learning identification of pseudomonas aeruginosa strains from colony image data".
+                <i>PLOS Computational Biology</i>. 
+                2023.
+              </td>
+            </tr>
 
-	      <li>
-		<b> Group-Sparse Subspace Clustering with Missing Data </b> <br>
-		D.P.-A., L. Balzano, R. Marcia, R. Nowak, R. Willett<br>
-		<i>SSP, 2016</i>.
-		<a href="papers/gssc.pdf"><img src="Images/pdficon16.png"/></a>
-		<a href="code/GSSC.zip"><img src="Images/matlabicon.png"/></a> </li><br>
+            <tr>  
+              <td> <a href = "members/huanran_li.html" class="no-new-tab"><b>H. Li</b></a> and
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Visualizing grassmannians via poincare embeddings".
+                <i>International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications (VISIGRAPP)</i>. 
+                2023. <b>Best student paper award.</b>
+              </td>
+            </tr>
 
-	      <li>
-		<b> Crime Detection via Crowdsourcing </b> <br>
-		D.P.-A., C. Solís-Lemus<br>
-		<i>MCPR, 2016</i>.
-		<a href="papers/crimeDetection.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+            <tr>  
+              <td> <a href = "members/ben_kizaric.html" class="no-new-tab"><b>B. Kizaric</b></a> and
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Principal component trees and their persistent homology".
+                <i>AAAI Conference on Artificial Intelligence</i>. 
+                2023.
+              </td>
+            </tr>
 
-	      <li>
-		<b> A Characterization of Deterministic Sampling Patterns for Low-Rank Matrix Completion </b> <br>
-		D.P.-A., N. Boston, R. Nowak<br>
-		<i>Allerton 2015, J-STSP, 2016</i>.
-		<a href="papers/LRMC.pdf"><img src="Images/pdficon16.png"/></a> </li><br>
+<!-- Year 2022 -->
+            <tr class="header">
+              <th style="width:60%;">2022</th>
+            </tr>
 
-	      <li>
-		<b> Adaptive Strategy for Restricted-Sampling Noisy Low-Rank Matrix Completion </b> <br>
-		D.P.-A., R. Nowak<br>
-		<i>CAMSAP, 2015</i>.
-		<a href="papers/NoisyAdaptiveLRMC.pdf"><img src="Images/pdficon16.png"/></a>
-		<a href="code/alarcon.zip"><img src="Images/matlabicon.png"/></a> </li><br>
+<!-- Publications -->
+            <tr>  
+              <td> <a href = "members/yuren_sun.html" class="no-new-tab"><b>Y. Sun</b></a>, T. Midori-Maeda, C. Solís-Lemus,
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, and Zuzana Burivalova.
+                "Classification of animal sounds in a hyperdiverse rainforest using convolutional neural networks with data augmentation.".
+                <i>Ecological Indicators</i>. 
+                2022.
+              </td>
+            </tr>
 
-	      <li>
-		<b> Deterministic Conditions for Subspace Identifiability from Incomplete Sampling </b> <br>
-		D.P.-A., N. Boston, R. Nowak<br>
-		<i>ISIT, 2015</i>.
-		<a href="papers/identifiability.pdf"><img src="Images/pdficon16.png"/></a>
-		<a href="code/identifiability.zip"><img src="Images/matlabicon.png"/></a> </li><br>
+            <tr>  
+              <td> K. Srivastava and <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "A perturbation bound on the subspace estimator from canonical projections".
+                <i>IEEE International Symposium on Information Theory (ISIT)</i>. 
+                2022.
+              </td>
+            </tr>
 
-	      <li>
-		<b> On the Sample Complexity of Subspace Clustering with Missing Data </b> <br>
-		D.P.-A., L. Balzano, R. Nowak<br>
-		<i>SSP, 2014</i>.
-		<a href="papers/onSCscmd.pdf"><img src="Images/pdficon16.png"/></a>
-		<a href="code/EM.zip"><img src="Images/matlabicon.png"/></a> </li><br>
+            <tr>  
+              <td> U. Mahmood and <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Fusion subspace clustering for incomplete data".
+                <i>International Joint Conference on Neural Networks (IJCNN)</i>. 
+                2022.
+              </td>
+            </tr>
 
+            <tr>  
+              <td> <a href = "members/huanran_li.html" class="no-new-tab"><b>H. Li</b></a> and
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Minimum-length trace reconstruction via integer programming".
+                <i> Allerton Conference on Communication, Control, and Computing</i>. 
+                2022.
+              </td>
+            </tr>
 
-	    </ul>
+            <tr>  
+              <td> <a href = "members/ben_kizaric.html" class="no-new-tab"><b>B. Kizaric</b></a> and
+                <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Classifying incomplete data with a mixture of subspace experts".
+                <i> Allerton Conference on Communication, Control, and Computing</i>. 
+                2022.
+              </td>
+            </tr>
 
-	  </div>
+            <tr>  
+              <td> H. Lin, M. Li, <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, and M. Malloy.
+                "Geometry of the minimum volume confidence sets".
+                <i> IEEE International Symposium on Information Theory (ISIT)</i>. 
+                2022.
+              </td>
+            </tr>
 
-		<div class="smallLink">
-			<br><br><hr>
-			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
-			<br><br><br><br><br><br>
-		</div>
+<!-- Year 2021 -->
+            <tr class="header">
+              <th style="width:60%;">2021</th>
+            </tr>
 
-	</div>
+<!-- Publications -->
+            <tr>  
+              <td> A. Soni, J. Linderoth, J. Luedtke, and <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Integer programming approaches to subspace clustering with missing data".
+                <i>Optimization for Machine Learning, NeurIPS</i>. 
+                2021.
+              </td>
+            </tr>
+
+            <tr>  
+              <td> A. Pimentel-Alarcón and <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Mixed-features vectors and subspace splitting".
+                <i>International Conference on Learning Representations (ICLR)</i>. 
+                2021.
+              </td>
+            </tr>
+
+            <tr>  
+              <td> G. Ongie, <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, L. Balzano, R. Willett, and R. Nowak. 
+                "Tensor methods for nonlinear matrix completion".
+                <i>SIAM Journal on Mathematics of Data Science</i>. 
+                2021.
+              </td>
+            </tr>
+
+<!-- Year 2020 -->
+            <tr class="header">
+              <th style="width:60%;">2020</th>
+            </tr>
+
+<!-- Publications -->
+            <tr>  
+              <td> R. Walden, D. Hope, S. Jefferies, and <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Satellite characterization via restoration-free imaging: A novel machine learning paradigm for SSA".
+                <i>Advanced Maui Optical and Space Surveillance Technologies (AMOS)</i>. 
+                2020.
+              </td>
+            </tr>
+
+            <tr>  
+              <td> C. Solís-Lemus, X. Ma, M. Hostetter, S. Kundu, P. Qiu, and <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Prediction of functional markers of mass cytometry data via deep learning".
+                <i>Statistical Modeling in Biomedical Research</i>. 
+                2020.
+              </td>
+            </tr>
+
+<!-- Year 2019 -->
+            <tr class="header">
+              <th style="width:60%;">2019</th>
+            </tr>
+
+<!-- Publications -->
+            <tr>  
+              <td> M. Rahman and <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Glimps: A greedy mixed-integer approach for super robust matched subspace detection".
+                <i>Allerton Conference on Communication, Control, and Computing</i>. 
+                2019.
+              </td>
+            </tr>
+
+<!-- Year 2018 -->
+            <tr class="header">
+              <th style="width:60%;">2018</th>
+            </tr>
+
+<!-- Publications -->
+            <tr>  
+              <td> <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, A. Tiwari, D. Hope, and S. Jefferies.
+                "Leveraging machine learning for high-resolution restoration of satellite imagery".
+                <i>Advanced Maui Optical and Space Surveillance Technologies (AMOS)</i>. 
+                2018.
+              </td>
+            </tr>
+
+            <tr>  
+              <td> <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Selective erasures for high-dimensional robust subspace tracking".
+                <i>Compressive Sensing VII: From Diverse Modalities to Big Data Analytics</i>. 
+                2018.
+              </td>
+            </tr>
+
+            <tr>  
+            </tr>
+              <td> C. Solís-Lemus and <a href = "members/daniel_pimentel.html class="no-new-tab""><b>D. Pimentel-Alarcón</b></a>.
+                "Breaking the limits of subspace inference".
+                <i>Allerton Conference on Communication, Control, and Computing</i>. 
+                2018.
+              </td>
+            </tr>
+
+            <tr>  
+              <td> <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>.
+                "Mixture matrix completion".
+                <i>Advances in Neural Information Processing Systems (NeurIPS)</i>. 
+                2018.
+              </td>
+            </tr>
+
+<!-- Year 2017 -->
+            <tr class="header">
+              <th style="width:60%;">2017</th>
+            </tr>
+
+<!-- Publications -->
+            <tr>  
+            </tr>
+              <td> <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, G. Ongie, L. Balzano, R. Willett, and R. Nowak.
+                "Low algebraic dimension matrix completion".
+                <i>Allerton Conference on Communication, Control, and Computing</i>. 
+                2017.
+              </td>
+            </tr>
+
+            <tr>  
+            </tr>
+              <td> <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a> and R. Nowak.
+                "Random consensus robust PCA".
+                <i>Artificial Intelligence and Statistics</i>. 
+                2017.
+              </td>
+            </tr>
+
+            <tr>  
+            </tr>
+              <td> <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, A. Biswas, and C. Solís-Lemus.
+                "Adversarial principal component analysis".
+                <i>IEEE International Symposium on Information Theory (ISIT)</i>. 
+                2017.
+              </td>
+            </tr>
+
+            <tr>  
+            </tr>
+              <td> <a href = "members/daniel_pimentel.html" class="no-new-tab"><b>D. Pimentel-Alarcón</b></a>, L. Balzano, R. Marcia, R. Nowak, and R. Willett.
+                "Mixture regression as subspace clustering".
+                <i>International Conference on Sampling Theory and Applications (SampTA)</i>. 
+                2017.
+              </td>
+            </tr>
+
+          </table>  
+        </div>
+      </div>
+    </div>
+
+  <!--End Page Container-->
+  </div>
+
+  <hr/>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.4.1.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+  
 </body>
+
+<!-- FOOTER -->
+<footer style="background:#ffffff00; color:#ecf0f1; padding:40px 20px; font-size:14px;">
+  <center>
+    <a href = "https://www.wisc.edu/">
+    <p style="margin:0;"> <img src="logos/uw_logo_small.png" alt="Logo" style="height:40px; width:auto;"> University of Wisconsin-Madison </p>
+    </a>
+    <p style="margin:0;">&copy; 2025 Daniel Pimentel-Alarcón. All rights reserved.</p>
+  </center>
+</footer>
+
 </html>

@@ -1,0 +1,1201 @@
+@import url('https://fonts.googleapis.com/css2?family=Varta:wght@300&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gudea:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+	width:auto;
+	letter-spacing: normal;
+	font-family: 'Raleway', sans-serif;
+	font-size:16px;
+  background-color:#ffffff !important;
+}
+
+body::-webkit-scrollbar {
+    width: .75em;
+    border-radius: 8px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 8px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 8px;
+}
+
+h1 {
+  padding-bottom:8px;
+  color:#0c2d1c!important;
+  font-size:36px;
+  font-weight: 700 !important
+}
+
+
+
+h2 {
+ font-size:28px;
+ color:#0c2d1c !important;
+ font-weight: 700 !important
+}
+
+h5 {
+font-size:18px !important;
+}
+
+
+
+a {
+  color:#004869;
+}
+
+a:hover, a:active {
+  text-decoration:none;
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+  line-height: 1.8em;
+  letter-spacing: normal;
+  color:#383f45;
+}
+
+a {
+  color:#0c2d1c
+}
+
+b {
+  font-weight: 700;
+
+}
+
+
+a:hover{
+  color:#2E86C1 
+}
+
+.page-container {
+  width: inherit;
+  max-width: 100%;
+  margin: auto;   
+}
+
+.container {
+  padding-right:30px !important;
+  padding-left:30px !important;
+  padding-top:40px;
+  padding-bottom:20px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.container.more-media {
+  padding-right:30px !important;
+  padding-left:30px !important;
+  padding-top:10px;
+  padding-bottom:20px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.col-md-8 {
+  padding-top:40px;
+  padding-right: 45px;
+  padding-left: 15px;
+}
+
+.col-md-4 {
+  padding-top:40px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.img {
+  position: relative;
+  width: 100px;
+  height:100px;
+  background-position: 50% 50%;
+}
+
+
+.btn-group input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+/* Logo */
+.logo_subheader {
+  font-size: 14px;
+  font-weight:500 !important;
+  color:#0c2d1c;
+}
+
+.logo_header {
+  font-size: 40px;
+  font-weight:800 !important;
+  font: Raleway, sans-serif;
+  color:#0c2d1c;
+
+}
+
+/* delete? */
+.introHomePage{
+  font-size: 16px;
+  font-weight:800 !important;
+  color: #0c2d1c !important
+}
+
+/* ------------------------------Home Page------------------------------*/
+
+/* 'who we are' heading */
+.who-we-are p {
+  font-size:16px !important;
+  font-weight:500;
+  line-height:32px;
+}
+
+.more_news_link_people {
+  font-size:18px !important;
+}
+
+/* ------------------------------News Scroll------------------------------*/
+
+#inTheNewsHeading {
+  font-size:26px;
+}
+
+#newsContainer {
+  height:400px;
+  overflow-y: scroll;
+  border-width:0px;  
+  padding-left:0px !important;
+}
+
+/* News Scroll */
+.newsDate {
+  font-size: 12px;
+  color:#0c2d1c !important;
+
+}
+
+.newsMainContent {
+  font-size: 12px;
+  color:#383f45;
+}
+
+
+#newsContainer::-webkit-scrollbar {
+  width: .75em;
+  border-radius: 8px;
+}
+ 
+#newsContainer::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 8px;
+}
+ 
+#newsContainer::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 8px;
+}
+
+.list-group {
+  float:center;
+}
+
+.list-group-item {
+  border-left:none;
+  border-right:none;
+  border-top:none;
+  border-bottom:none;
+  background-color:#ffffff;
+  padding: 10px 30px 18px 0px !important;
+  color:#403F3F !important;
+  letter-spacing:.04em;
+}
+
+
+/* ------------------------------Navigation------------------------------*/
+
+/*  Navigation pills */
+
+#navPills li{
+  padding:6px 6px 6px 6px !important;
+  font-size: 14px !important;
+}
+
+#nav-pills ul{
+
+  
+}
+
+/*  Navigation pills text*/
+.btn.btn-s-md.btn-white.m-b {
+  font-size: 14px !important;
+  letter-spacing: .04em;
+}
+
+.navbar {
+  background-color:#ffffff !important;    
+  padding-bottom:10px;
+  border-bottom:1px solid #E6E7E8;
+  -webkit-box-shadow: 0px 1px 2px rgba(159,159,155,0.4)
+}
+
+
+#toggle {
+    background-color:none;
+    color:black;
+}
+
+.nav-item {
+  text-align: right;
+  padding:0px 10px 0px 10px
+}
+
+.nav-link {
+  text-align:left;
+  font-size:14px;
+  color:#0c2d1c !important;    
+}
+
+#navbarNav {
+
+}
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  font-size:14px;
+  white-space: pre-wrap;
+  padding-top:8px;
+  padding-bottom:8px;
+}
+
+.dropdown-menu.show {
+ 
+}
+
+.dropdown-menu{
+
+    white-space: normal;
+}
+
+
+
+
+
+/*.dropdown-menu.show {
+  max-width:250px;
+
+  margin-left:-20px;
+}
+
+.dropdown-item {
+  font-size:12px;
+}
+
+
+/*.navbar-toggler-icon {
+  border-color:red!important;
+  color:red !important
+}
+
+.navbar-toggler{
+  color:red;
+}
+
+
+.navbar.toggler.collapsed .page-container{
+    background-color: blue   
+}
+*/
+
+
+.col-lg-4.col-md-6.p-4{
+  overflow:hidden !important
+}
+
+
+/* ------------------------------Carousel------------------------------*/
+
+.col-md-12.carousel {
+  width:100% !important;
+  padding-left:0px !important;
+}
+
+
+
+/* carousel */
+.container-fluid {
+  background:#373737
+}
+
+.carousel {
+  opacity:.8;
+}
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
+  background-color: #000a06;
+  opacity:1;
+  color:white !important;
+  height:125px;
+  font-size:16px !important;
+}
+
+.carousel-item img {
+  width:100% !important;
+} 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 28px;
+  width: 28px;
+  outline: black;
+  background-size: 100%, 100%;
+  border: 5px solid black;
+  background-color: black
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity ease-out .7s;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-indicators > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+
+/* ------------------------------People Page ------------------------------*/
+
+/*  container for people photos */
+#people-container {
+    padding-top:10px;
+  }
+
+
+
+/*  Bio info container (name, title) */
+.bio-holder {
+  padding-top:10px;
+}
+
+/*  Bio name */
+.people_name {
+  padding-top:2px;
+  font-size: 20px;
+  color:#0c2d1c !important
+}
+
+/*  Bio title */
+.mb-0 {
+  color:#383f45 !important;
+  font-size:14px;
+  font-weight:400 !important;
+  text-transform: uppercase
+}
+
+
+
+/*  Bio image container */
+.img-holder {
+  max-width: 200px;
+  max-height: 200px;
+  overflow: hidden !important;
+  margin:0 auto;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 50% !important;
+  transform: translateZ(0px); /* force GPU rendering */
+}
+
+.img-fluid.d-block.mx-auto{
+  transition: all 0.125s;
+
+  height: 100%;
+  cursor: pointer;
+}
+
+
+
+
+/*  Scaling bio image on hover */
+.img-fluid.d-block.mx-auto:hover {
+  -webkit-transform: scale(1.1);
+  -webkit-transition: all 0.125s ease-in-out 0s;
+  -moz-transition: all 0.125s ease-in-out 0s;
+  -ms-transition: all 0.125s ease-in-out 0s;
+  -o-transition: all 0.125s ease-in-out 0s;
+  transition: all 0.125s ease-in-out 0s;
+}
+
+.img-fluid.d-block.mb-3.mx-auto:focus {
+  -webkit-transform: scale(1.1);
+  -webkit-transition: all 0.125s ease-in-out 0s;
+  -moz-transition: all 0.125s ease-in-out 0s;
+  -ms-transition: all 0.125s ease-in-out 0s;
+  -o-transition: all 0.125s ease-in-out 0s;
+  transition: all 0.125s ease-in-out 0s;
+}
+
+
+/* ------------------------------Team Page ------------------------------*/
+.col-10.team {
+  padding-bottom:10%;
+  max-width:70%;
+}
+
+/* ------------------------------People Sub-Page (individual people pages)------------------------------*/
+
+/*  bio info container  */
+.col-md-9.col-sm-8 {
+  padding-top:40px;
+}
+
+/*  bio headshot */
+.img-fluid.d-block.headshot {
+  border-radius : 50%;
+  max-width: auto !important;
+  max-height: auto !important;
+}
+
+/*  bio social media icons */
+.bio-social-icons{
+  display:inline-block;
+}
+
+.social-menu {
+  display: flex;
+  list-style-type: none;
+}
+ 
+.social-menu i {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+ul.social-menu{
+  padding-left:0px;
+}
+
+.social-menu i:before {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.social-menu a {
+  text-decoration: none;
+}
+
+.fa-facebook {
+  background:#3b5998
+} 
+
+.fa-linkedin {
+  background:#007bb6
+}
+
+.fa-google {
+  background:#4285F4
+}
+
+.fa-researchgate {
+  background:#40BA9B
+}
+
+.fa-instagram {
+  background:#e442d7
+}
+
+.fa-github {
+  background:#211F1F
+}
+
+.social-menu i:hover {
+  opacity: .7;
+  border-radius: 0;
+}
+
+.google-scholar {
+  display:inline-block;
+  height:100%;
+  width:25px;
+  vertical-align: bottom;
+}
+
+/*  bio info  */
+.bio-title {
+  margin-bottom:0px;
+  font-weight:600;
+  font-size:14px;
+  color:#004869;
+}
+
+.bio-subtitle {
+  margin-bottom:0px;
+  font-weight:600;
+  font-size:18px;
+  color:#004869;
+}
+
+.bio-email {
+  color:#004869;
+  font-weight:600;
+  font-size:14px;
+}
+
+.bio-contact-info {
+color:#004869 !important
+}
+
+
+/*  bio text container  */
+.col-md-8.bioParagraph { 
+  padding-top:0px;
+}
+
+/*  delete? */
+.news-img-holder {
+  background-color:red;
+  overflow: hidden;
+  margin:0 auto
+}
+
+/* ------------------------------Holly Gibbs Page ------------------------------*/
+
+/*  Holly Gibbs Action Photos Captions */
+.holly_photo_description_container {
+  padding-top:2%;
+}
+
+
+
+/*  This is for logo. Logo was replaced by text. Use this to resize original Gibbs logo */
+#gibbsLogo{
+  max-height:100px;
+  padding-left:10px;
+ 
+}
+
+/* ------------------------------Research Page------------------------------*/
+
+.col-lg-4.col-md-4.px-3.py-3 {
+  padding-bottom:60px !important;
+}
+
+/*  research row */
+.row.research{
+  padding-bottom:55px;
+}
+
+.research_subtopic_description {
+  color:#004869;
+  size:14px !important;
+  text-align: center
+}
+
+.col-sm-2.back_to_research_nav {
+  color:#004869 !important;
+  text-align:left !important;
+}
+
+.col-md-12.pl-md-5.pr-md-5.research {
+
+  padding-left:0px !important;
+
+}
+
+.research_byline{
+  color:#0c2d1c;
+}
+
+.header.research {
+  font-size:16px;
+   color:#0c2d1c;
+}
+
+ 
+
+  
+/*  delete? */
+/*.d-block.w-100.news-image:hover{
+    -webkit-transform: scale(1.1);
+    -webkit-transition: all 0.125s ease-in-out 0s;
+    -moz-transition: all 0.125s ease-in-out 0s;
+    -ms-transition: all 0.125s ease-in-out 0s;
+    -o-transition: all 0.125s ease-in-out 0s;
+    transition: all 0.125s ease-in-out 0s;
+}*/
+
+.img-fluid.d-block.mb-3.mx-auto.rounded-circle{
+  padding-bottom:0px;
+
+}
+
+/* ------------------------------Buttons------------------------------*/
+#searchBars, #filterButtons{
+  padding-top:20px;
+}
+
+#filterHeading{
+  padding-top:0px;
+}
+
+.btn {
+  background-color:#ffffff !important;
+  color:#0c2d1c;
+  font-weight:400 !important;
+  border:none;
+
+}
+
+.btn.btn-default {
+  letter-spacing: normal;
+}
+
+
+
+.btn.active {
+  background-color:#0c2d1c!important;
+  color:#ffffff !important;
+  box-shadow:none !important;
+}
+
+.btn:hover{
+  background-color:#0c2d1c !important;
+  color:#ffffff !important;
+  box-shadow:none !important;
+}
+
+.btn:focus{
+  background-color:#0c2d1c !important;
+  color:#ffffff !important;
+  box-shadow:none !important;
+}
+
+/* "Read More" Button on Card */
+.btn.btn-indigo.btn-rounded.btn-md {
+  font-size:12px;
+}
+
+
+/* ------------------------------Cards------------------------------*/
+
+/* card */
+.card {
+  box-shadow:0rem 0rem 0.5rem 0rem rgb(0 0 0 / 40%);
+  background: #fff;
+  border:0 !important;
+}
+
+.card :hover h4{
+  color:#0c2d1c !important;
+}
+
+.card:hover {
+  box-shadow:0rem 0.0625rem 0.5rem 0rem rgba(0,0,0,0.8);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.card-title {
+  font-size:20px;
+  font-weight:700;
+}
+
+p.card-text {
+  line-height:1.6em;
+  font-weight:400 !important;
+  font-size:14px;
+
+}
+
+/* ------------------------------Publications------------------------------*/
+
+.container.publications {
+  padding-right:10px;
+  padding-left:10px;
+  padding-top:0px;
+  padding-bottom:20px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.container.publicationsFilters {
+  padding-right:10px;
+  padding-left:10px;
+  padding-top:40px;
+  padding-bottom:0px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+/* link to paper */
+.publink:hover {
+  color:#2E86C1;
+
+
+}
+
+
+.col-md-12 {
+
+  padding-left:15px !important;
+
+}
+
+
+/* ------------------------------Media------------------------------*/
+
+/* Media name (i.e. Forbes) */
+.media-item {
+  color: #004869
+}
+
+.media-text{
+  color:#212529;
+  font-size: 14px;
+  font-weight:400 !important;
+}
+
+/* ------------------------------Teaching Page ------------------------------*/
+
+
+h6{
+  color:#0c2d1c;
+
+}
+
+h6.teaching-content-header {
+  color:#0c2d1c;
+  font-size:18px; 
+}
+/* Capstone list content */
+ul.capstone.list.content {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+  line-height: 1.8em;
+  letter-spacing: 0.01em; 
+  color:#383f45;
+}
+
+/* Geog/Env Studies 309 Professor Bio */
+.col-12.course {
+  color:#403F3F;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400 !important;
+  line-height: 1.8em;
+  letter-spacing: 0.01em; 
+  padding-left:0px !important;
+  padding-top:0px !important;
+}
+
+.col-md-12.course {
+  color:#383f45;
+  letter-spacing:normal;
+  font-weight:400 !important;
+  line-height:1.8em;
+
+}
+
+
+
+/* Capstone Graphic */
+.img-fluid.course {
+  padding-top:3%;
+  padding-bottom:3%;
+  max-width:75%;
+}
+
+/* Geog/Env Studies 309 Holly Photo */
+.img-fluid.course.hollybio {
+
+  max-width:75%;
+}
+
+
+/* Geog/Env Studies 309 Holly Photo */
+
+/*  Holly Gibbs Action Photos */
+.col-10.holly {
+  padding-bottom:10%;
+  padding-left:0%;
+  padding-right:0%;
+}
+
+
+.teaching-content-header {
+  color:#0c2d1c;
+  font-weight:600;
+  padding-top:10px;
+  padding-bottom:3px;
+}
+
+.bio-email-teaching {
+  color:#004869;
+  font-weight:600;
+  font-size:16px;
+}
+
+/*.aboutHeading {
+  color:#004869;
+  background-color: red
+}*/
+
+
+/* ------------------------------Opportunities------------------------------*/
+
+.job-announcement {
+   font-weight: 600 !important;
+}
+
+.job-link{
+  color:#2E86C1;
+  font-weight:800 !important;
+}
+
+.opportunitiesList li{
+  margin: 20px 0 !important
+}
+
+.holly-contact-opportunities {
+  color:#2E86C1;
+}
+
+/* ------------------------------Food Sustainability ------------------------------*/
+#food-sustainability-header {
+  padding-bottom:0px;
+}
+.col-md-8.sustainabilityOrg {
+  padding-top:50px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.col-md-4.sustainabilityOrg {
+  padding-top:10px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.mb-3.sustainabilityOrg {
+  font-weight:700;
+
+}
+
+.mb-3.studentOrgs {
+  padding-bottom:0px;
+  padding-top:10px;
+  
+}
+
+.sustainability-img {
+  
+  max-width:225px;
+
+  box-shadow: 0px 3px 2px #ccc;
+
+}
+
+/* first item under headings, make padding less */
+#food-recovery-network, #slow-food {
+  padding-top:30px;
+}
+/* ------------------------------Filterable Table ------------------------------*/
+
+/*  table */
+#myTable {
+  border-collapse: separate; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 0px solid #ddd; /* Add a grey border */
+  font-size: 14px; /* Increase font-size */
+  border-spacing:0 .7em 
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 0px solid #ddd;
+  background-color: rgba(12,45,28,0.03);
+}
+
+#myTable th {
+  /* Add a bottom border to all table rows */
+  background-color: #ffffff !important
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: rgba(12,45,28,.1);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 575px) {
+
+  #lark-headshot {
+    padding-bottom:10px;
+  }
+
+  .container.bioParagraph {
+    padding-top:0px;
+  }
+
+  .bio-social-icons{
+    padding-bottom:15px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .row.research{
+    padding-bottom:0px;
+  }
+
+  .bio-contact-info {
+    font-size:18px !important
+  }
+
+  .people_name {
+    font-size:16px !important;
+    color:#0c2d1c !important
+  }
+
+  .mb-0 {
+    color:#383f45 !important;
+    font-size:12px;
+    text-transform: uppercase;
+    font-weight:400 !important;
+  }
+
+
+  #about span { 
+    color:#ffffff !important;
+    background-color:#0c2d1c;
+    border-radius:8px;
+    padding:6px 6px 6px 6px;
+  }
+
+  #people span { 
+    color:#ffffff !important;
+    background-color:#0c2d1c;
+    border-radius:8px;
+    padding:6px 6px 6px 6px;
+  }
+
+  #publications span { 
+    color:#ffffff !important;
+    background-color:#0c2d1c;
+    border-radius:8px;
+    padding:6px 6px 6px 6px;
+  }
+
+  .page-container {
+    padding-top:0vh;
+    padding-left:3vh;
+    padding-right:3vh;
+  }
+
+  .nav-link:hover span { 
+    color:#ffffff !important;
+    background-color:#0c2d1c;
+    border-radius:8px;
+    padding:6px 6px 6px 6px;
+  }
+
+  .nav-link span { 
+    padding-left:6px 
+  }
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+
+@media (min-width: 992px) {
+
+  #about { 
+    color:#ffffff !important;
+    background-color:#0c2d1c;
+    border-radius:8px;
+  }
+
+  #people { 
+    color:#ffffff !important;
+    background-color:#0c2d1c;
+    border-radius:8px;
+  }
+
+  #publications { 
+    color:#ffffff !important;
+    background-color:#0c2d1c;
+    border-radius:8px;
+  }
+
+  .nav-link:hover { 
+    color:#ffffff !important;
+    background-color:#0c2d1c;
+    border-radius:8px;
+  }
+  /* CSS that should be displayed if width is equal to or less than 800px goes here */
+}
+
+
+@media (max-width:767px) {
+  
+   .nav-pills {
+     float: left !important;
+   }
+} 
+
+
+@media only screen and (max-width: 768px) {
+
+  .py-5.text-center.text-info.background-info {
+    padding-top:5px !important;
+  }
+
+  #people-container {
+    padding-top:10px;
+  }
+
+  .card-img-top {
+    -webkit-filter: brightness(100%);
+  }
+
+  .card-text.readMore {
+    padding-top:12px;
+    font-size:12px;
+    color:#403F3F;
+    font-weight:700;
+  }
+
+  /* mouse over link */
+  .card-text.readMore :hover {
+    color: #2E86C1 ;
+  }
+
+  /* mouse over link */
+  .lab_news_link:hover {
+    color: #2E86C1 ;
+  }
+
+  .more_news_link:hover {
+    color: #2E86C1 ;
+  }
+
+  .card-img-top:hover {
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  .card:hover .card-img-top{
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+
+  .sustainability-img {
+    width:40%
+  }
+
+  .col-md-4.sustainabilityOrg {
+    padding-top:20px;
+  }
+
+}
+
+.heroh{position:relative;min-height:25vh;overflow:hidden}
+.herov{position:relative;min-height:29vh;overflow:hidden}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-content{position:relative;z-index:1;color:#fff;padding:4rem 1rem}
+

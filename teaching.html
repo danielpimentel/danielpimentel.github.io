@@ -1,126 +1,256 @@
-<html>
+<!doctype html>
 
+<html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<script src="swap.js"></script>
-<script type="text/javascript"
-	src="http://latex.codecogs.com/latexit.js"></script>
-<script type="text/javascript">
-LatexIT.add('p',true);
-</script>
-<link rel=stylesheet href="style.css" type="text/css">
-<title>Daniel Pimentel</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJYJHKJG4B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CJYJHKJG4B');
+  </script>
+	<!--Essential items -->
+  	<meta charset="utf-8">
+	<!-- Mobile specifications-->
+	<meta content="width=device-width, intial-scale=1, maximum-scale=1" name=viewport>
+	<!-- CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+	
+	<!-- Fonts-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<!-- Favicon-->
+	<link href="logos/SOL_logo_small.png" rel="shortcut icon">
+  <link href = "css/style.css" rel="stylesheet" type="text/css">
+  <title>SOL Lab</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+
+
 </head>
 
-<body align="center">
-	<div>
-	  <div class="header">
-			<a href="index.html", class="bigLink"> Daniel Pimentel-Alarcón </a> <span class="spacer"> </span>
-	    <a href="publications.html", class="smallLink"> papers &amp code </a> <span class="spacer"> </span>
-	    <a href="talks.html", class="smallLink"> talks </a> <span class="spacer"> </span>
-	    <a href="teaching.html", class="smallLink"> <b>teaching</b> </a> <span class="spacer"> </span>
-			<a href="students.html", class="smallLink"> students </a> <span class="spacer"> </span>
-	    <a href="research.html", class="smallLink"> research </a> <span class="spacer"> </span>
-			<a href="hobbies.html", class="smallLink"> hobbies </a>
-	  </div>
+ <!-- Makes to links open in new -->
+<head>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Get all the <a> elements on the page
+      const links = document.querySelectorAll('a');
+
+      // Loop through each link and set the target attribute to "_blank"
+      links.forEach((link) => {
+        if (!link.classList.contains('no-new-tab')) {
+          link.setAttribute('target', '_blank');
+        }
+      });
+    });
+  </script>
+</head>
+	
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-xl navbar-light bg-dark sticky-top">
+    <a class="navbar-brand no-new-tab" href="index.html">
+      <div class="logo_subheader">
+        Structure Optimization Learning Lab
+        <br>
+      </div>
+      <div class="logo_header">
+        <img src="logos/SOL_logo.png" alt="Logo" style="height:40px; width:auto;">
+        <br>
+      </div>
+    </a>
+    <button id="toggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-left" id="navbarNav">
+      <ul id = "navPills" class=" nav-pills navbar-nav ml-auto">    
+        <li>
+          <a href="index.html" class="btn btn-s-md btn-white m-b no-new-tab">ABOUT
+          </a>
+        </li>
+        <li>
+          <a href="people.html" class="btn btn-s-md btn-white m-b no-new-tab">PEOPLE
+          </a>
+        </li>
+        <li>
+          <a href="research.html" class="btn btn-s-md btn-white m-b no-new-tab">RESEARCH
+          </a>
+        </li>
+        <li>
+          <a href="publications.html" class="btn btn-s-md btn-white m-b no-new-tab">PUBLICATIONS
+          </a>
+        </li>
+        <li>
+           <a href="software.html" class="btn btn-s-md btn-white m-b no-new-tab">SOFTWARE
+          </a>
+        </li>
+        <li>
+           <a href="teaching.html" class="btn btn-s-md btn-white m-b no-new-tab active">TEACHING
+          </a>
+        </li>
+        <li>
+          <a href="outreach.html" class="btn btn-s-md btn-white m-b no-new-tab">OUTREACH
+         </a>
+         </li> 
+         <li>
+          <a href="breakingstereotypes.html" class="btn btn-s-md btn-white m-b no-new-tab">BREAKING STEREOTYPES
+         </a>
+         </li>
+      </ul> 
+    </div>
+  </nav>
+
+  <!--Content-->
+  <div class="page-container">
+
+    <div class="container" style="padding-bottom:0px">
+      <div class="row">
+        <div class="col-md-10">
+          <h1 class="mb-3">Teaching</h1>
+          <p>
+            <b>Instructor:</b> <a href = "members/daniel_pimentel.html">Daniel Pimentel-Alarcón</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Teaching Cards -->
+    <div class='container'>
+
+      <!-- 1nd Row -->
+      <div class="row research">
+
+        <!-- Card -->
+        <div class="col-lg-4 col-md-4 px-3 py-3" id="first">
+          <a href="classes/cs760.html" class="no-new-tab">
+          <div class="card">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="cards/cs760_card.jpg" alt="Card image cap">
+            </div>
+
+            <!-- Card content -->
+            <a href="classes/cs760.html" class="no-new-tab">
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">CS760 — Machine Learning</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Graduate-level class covering the theoretical foundations of core machine learning algorithms
+                — from logistic regression to SVMs and neural networks.
+                Students should have a background in linear algebra, probability, and coding.
+              </p>
+            </div>
+            </a>
+          </div>
+          </a>
+        </div>
+
+        <!-- Card -->
+        <div class="col-lg-4 col-md-4 px-3 py-3" id="second">          
+          <a href="classes/stat479.html" class="no-new-tab">
+          <div class="card">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="cards/stat479_card.png" alt="Card image cap">
+            </div>
+
+            <!-- Card content -->
+            <a href="classes/stat479.html" class="no-new-tab">
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">STAT 479 — AI for Sciences and Humanities</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Open to graduate and senior undergraduate students in all <b>non-mathematical</b> majors.
+                A high-level overview of the inner workings of AI without the need for a mathematical background.
+                Hands-on experience without the need for programming experience.
+                Exposure to broader considerations such as ethics, interpretability, and societal impact.
+              </p>
+
+            </div>
+          </a>
+          </div>
+        </a> 
+        </div>
+
+        <!-- Card -->
+        <div class="col-lg-4 col-md-4 px-3 py-3" id="first">
+          <a href="classes/bmi567.html" class="no-new-tab">
+          <div class="card">
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="cards/bmi567_card.jpg" alt="Card image cap">
+            </div>
+
+            <!-- Card content -->
+            <a href="classes/bmi567.html" class="no-new-tab">
+            <div class="card-body">
+              <!-- Title -->
+              <h4 class="card-title">BMI 567 — Medical Image Processing</h4>
+              <hr>
+              <!-- Text -->
+              <p class="card-text">Open to graduate and senior undergraduate students.
+                Hands-on introduction to medical image analysis techniques —
+                formating, segmentation, registration, quantifcation, and classifcation.
+                Students should have prior exposure to basic statistics and coding.
+              </p>
+            </div>
+            </a>
+          </div>
+          </a>
+        </div>
 
 
-	  <div class="teachingSection">
-
-	    <div class="research">
-				<div class="infoText"> <b>Spring 2025:</b> </div>
-	      		<div class="bigText"> <b>BMI 826</b> </div>
-				<div class="infoText"> <b>AI for Sciences & Humanities</b> </div>
-
-				<br><br>
-
-				<div class="infoText"> <a href="CS760.html", class="smallLink"> Spring 2024: </a> </div>
-				<div class="bigText"> <a href="CS760.html", class="bigLink"> BMI/CS 760 </a> </div>
-				<div class="infoText"> <a href="CS760.html", class="smallLink"> Machine Learning </a> </div>
-
-				<br><br>
-
-				<div class="infoText"> <a href="BMI567.html", class="smallLink"> Spring 2020: </a> </div>
-				<div class="bigText"> <a href="BMI567.html", class="bigLink"> BMI/CS 567 </a> </div>
-				<div class="infoText"> <a href="BMI567.html", class="smallLink"> Med Im An </a> </div>
-
-				<br><br>
-
-				<div class="infoText"> <a href="CS6780.html", class="smallLink"> Spring 2019: </a> </div>
-				<div class="bigText"> <a href="CS6780.html", class="bigLink"> CS 6780 </a> </div>
-				<div class="infoText"> <a href="CS6780.html", class="smallLink"> Fund Data Sci </a> </div>
-
-				<br><br>
-
-				<div class="infoText"> <a href="CS4850.html", class="smallLink"> Fall 2018: </a> </div>
-	      <div class="bigText"> <a href="CS4850.html", class="bigLink"> CS 4850 </a> </div>
-				<div class="infoText"> <a href="CS4850.html", class="smallLink"> Intro Mach Learn </a> </div>
-
-				<br><br>
-
-	      <div class="infoText"> <a href="CS6980.html", class="smallLink"> Spring 2018: </a> </div>
-	      <div class="bigText"> <a href="CS6980.html", class="bigLink"> CS 6980 </a> </div>
-				<div class="infoText"> <a href="CS6980.html", class="smallLink"> Intro Data Sci </a> </div>
-
-				<br><br>
-
-				<div class="infoText"> <a href="CS8850.html", class="smallLink"> Fall 2017: </a> </div>
-	      <div class="bigText"> <a href="CS8850.html", class="bigLink"> CS 8850 </a> </div>
-				<div class="infoText"> <a href="CS8850.html", class="smallLink"> ML Theory </a> </div>
-
-	    </div>
-
-	    <div class="researchInfo">
-				<div class="papersList">
-
-			    <div class="infoText"> <b>Lectures:</b> M/W, 11:00am-12:15pm:
-						<a>GRAINGER 2080</a></div>
-
-					<div class="infoText"> <b>Office Hours:</b> Wednesday 1:30pm-2:30pm at WID Atrium, or by appointment.</div>
-
-					<div class="infoText">
-						<a href="teaching/AI4SH/AI4SH_Syllabus.pdf"><img src="Images/pdficon16.png"/></a>
-						<a href="teaching/AI4SH/AI4SH_Syllabus.pdf", class="smallLink"> Syllabus </a> &nbsp &nbsp
-	 					</div>
-
-					<br><br>
-
-					<div class="bigText"> Lecture Materials </div>
-					<hr>
-
-							<a href="teaching/AI4SH/lectures/AI4SH_1_Introduction.pdf"><img src="Images/pdficon16.png"/></a>
-							<a href="teaching/AI4SH/lectures/AI4SH_1_Introduction.pdf", class="smallLink">Section 1: Introduction</a>
-							<br>
+    <!-- End 1nd Row -->
+      </div>  
+    <!-- End Research Cards -->
+    </div>
 
 
 
-					<br>
-			    <div class="bigText"> Mini Projects </div>
-			    <hr>
 
-						
+  <!-- End Page Container -->
+  </div>
 
+	<hr/>
 
-			  </div>
-
-
-	    </div>
-
-	  </div>
-
-
-		<div class="smallLink">
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<br><br><br><br><br><br><br><br><br><br>
-			<hr>
-			&copy <script>document.write(new Date().getFullYear())</script> Daniel Pimentel-Alarcón
-			<br><br><br><br><br><br>
-		</div>
-
-
-	</div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-3.4.1.js"></script>
+ <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+  
 </body>
+
+<!-- FOOTER -->
+<footer style="background:#ffffff00; color:#ecf0f1; padding:40px 20px; font-size:14px;">
+  <center>
+    <a href = "https://www.wisc.edu/">
+    <p style="margin:0;"> <img src="logos/uw_logo_small.png" alt="Logo" style="height:40px; width:auto;"> University of Wisconsin-Madison </p>
+    </a>
+    <p style="margin:0;">&copy; 2025 Daniel Pimentel-Alarcón. All rights reserved.</p>
+  </center>
+</footer>
+
+
 </html>
